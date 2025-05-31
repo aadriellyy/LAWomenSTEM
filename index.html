@@ -14,10 +14,25 @@
 </head>
 
 <body class="bg-gradient-to-b from-black to-gray-900 text-white">
+    
+    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
+        <div class="text-xl font-bold">
+            <a href="#">LAWomenSTEM</a>
+        </div>
+        <ul class="flex gap-6 text-base">
+            <li><a href="#sobre" class="hover:text-purple-400 transition">Sobre</a></li>
+            <li><a href="organizacao.html" class="hover:text-purple-400 transition">Organização</a></li>
+            <li><a href="#submissoes" class="hover:text-purple-400 transition">Submissões</a></li>
+            <li><a href="#inscricao" class="hover:text-purple-400 transition">Inscrição</a></li>
+            <li><a href="#contato" class="hover:text-purple-400 transition">Contato</a></li>
+        </ul>
+    </nav>
+
     <!--BANNER-->
-    <section class="relative bg-cover bg-center min-h-screen flex items-center" style="background-image: url('assets/floral.png')">
+    <section class="relative bg-[url('assets/floral.png')] bg-cover bg-center min-h-screen">
         
-        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <div class="absolute top-0 right-0 w-80 h-80 bg-yellow-400 rounded-full blur-3xl opacity-30 pointer-events-none z-10"></div>
+        
         <div class="relative z-10 container mx-auto px-6 md:px-20 py-10 grid md:grid-cols-2 items-center gap-8">
             <div class="md:pr-10">
                 <h1 class="text-4xl md:text-5xl font-bold leading-tight">
@@ -34,7 +49,7 @@
                 </a>
             </div>
 
-            <div class="flex justify-center">
+            <div class="flex justify-center mt-12">
                 <img id="continenteZoom"
                     src="assets/logo-continente.png"
                     alt="Logo do Fórum"
@@ -57,15 +72,23 @@
         </div>
     </section>
 
-    <section class="relative bg-cover bg-center flex items-center px-6 md:px-20 py-10">
+    <section id="sobre" class="relative bg-cover bg-center flex items-center px-6 md:px-20 py-10">
         <div class="container mx-auto grid md:grid-cols-2 items-center gap-4">
-            <div class="md:pr-10">
-                <p class="text-lg mt-2">Sobre o evento</p>
+            <div class="md:pr-10"><br>
+                <p class="text-lg mt-2">Sobre o evento</p><br>
                 <h2 class="text-4xl md:text-5xl font-semibold">
                     <span style="color: #673FBC;"><strong>Você já ouviu falar sobre o LAWomenSTEM?</strong></span>
                 </h2><br>
                 <p class="text-lg mt-2">Esteja conosco no maior encontro de Mulheres em STEM da América Latina Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina</strong><br>
-                Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina</strong></p>
+                Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina </strong>
+                <br><br>
+                O objetivo geral do evento é reunir lideranças femininas da América Latina nas áreas STEM para colaborações em 
+                projetos de ensino, pesquisa e extensão, de modo a promover a inclusão e a participação ativa de meninas e mulheres nas 
+                áreas STEM. O foco é ampliar o acesso, a representatividade e o engajamento feminino neste setor estratégico e inovador 
+                numa região com desafios grandes e complexos na América Latina e especialmente no DF, promovendo a articulação entre os países dessa região. 
+
+                </p>
+
             </div> 
            <div class="flex justify-center -mt-16 md:-mt-24">     
                 <img src="assets/sobre-evento-flor.png" alt="Flor" class="w-full max-w-2xl xl:max-w-3xl transform transition-transform duration-500 hover:scale-110">
