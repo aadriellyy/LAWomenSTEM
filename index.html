@@ -97,15 +97,44 @@
         </div>
     </section>
 
-<script>
-    window.addEventListener('scroll', () => {
-        const floral = document.getElementById('continenteZoom');
-        const scrollTop = window.scrollY;
-        const zoom = Math.min(1 + scrollTop / 800, 1.2); 
-        floral.style.transform = `scale(${zoom})`;
-    });
-</script>
+    <br><br><br><br><br><br><br>
+    <footer class="bg-gray-600 text-center mg:text-left">
+        <div class = "max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
 
+            <div class = "flex flex-col items-center md:items-start">
+                <img src="assets/logo-continente.png" alt="Logo do Fórum" class="w-40 mb-2 transform transition-transform duration-500 hover:scale-110">
+                <span class="text-sm text-gray-100">29 A 31 DE JULHO - BRASÍLIA-DF </span>
+            </div>
+
+            <div class="text-center md:text-right">
+                <h2 class="text-xl font-bold text-gray-200 mb-2">SIGA NOSSAS REDES SOCIAIS</h2>
+                <div class="flex justify-center md:justify-end gap-4 mb-4">
+                    <a href="https://www.linkedin.com/company/lawomenstem/" target="_blank" class="text-gray-600 hover:text-purple-600 transition">
+                        <img src="assets/redes-sociais/linkedin.png" alt="LinkedIn" class="w-8 h-8">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <hr class="border-t border-gray-300 my-4 mx-4"/>
+
+        <div class="text-center text-sm text-gray-100 pb-4 px-4">
+            Copyright © 2025. Todos os Direitos Reservados.
+            Desenvolvido por <span class="text-gray-100 font-semibold">Ana Caroline</span> e 
+            <span class="text-gray-100 font-semibold">Adrielly Lima</span>.
+        </div>
+
+    </footer>
+
+
+    <script>
+        window.addEventListener('scroll', () => {
+            const floral = document.getElementById('continenteZoom');
+            const scrollTop = window.scrollY;
+            const zoom = Math.min(1 + scrollTop / 800, 1.2); 
+            floral.style.transform = `scale(${zoom})`;
+        });
+    </script>
 </body>
 
 </html>
