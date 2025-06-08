@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum de Mulheres em STEM</title>
+    <title>Fórum de Mulheres em STEM</title> 
+    <link rel="icon" type="image/png" href="assets/logo-continente_old.png"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -17,62 +18,74 @@
     
     <nav class="fixed top-0 left-0 w-full z-50 bg-gray-600 bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
         <div class="text-xl font-bold">
-            <a href="#">LAWomenSTEM</a>
+            <a href="index.html">LAWomenSTEM</a>
         </div>
-        <ul class="flex gap-6 text-base">
-            <li><a href="#" class="hover:text-purple-900 transition">Home</a></li>
-            <li><a href="#sobre" class="hover:text-purple-900 transition">Sobre</a></li>
-            <li><a href="#local" class="hover:text-purple-900 transition">Local</a></li>
-            <li><a href="programacao.html" class="hover:text-purple-900 transition">Programação</a></li>
-            <li><a href="comissao.html" class="hover:text-purple-900 transition">Comissão</a></li>
-            <li><a href="submissoes.html" class="hover:text-purple-900 transition">Submissões</a></li>
-            <li><a href="#inscricao" class="hover:text-purple-900 transition">Inscrição</a></li>
-            <li><a href="instituicao.html" class="hover:text-purple-900 transition">Instituições Parceiras</a></li>
-            <li><a href="#contato" class="hover:text-purple-900 transition">Contato</a></li>
-        </ul>
+        <ul class="flex gap-6 text-base relative">
+            <li><a href="index.html" class="hover:text-purple-900 transition font-bold">Home</a></li>  
+            <li class="relative" id="menu-sobre">
+                <div id="btn-sobre" class="flex items-center gap-1 font-bold hover:text-purple-900 cursor-pointer select-none">
+                    <a href="#sobre">Sobre</a>
+                    <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            
+                <ul id="submenu-sobre" class="absolute left-0 top-full mt-1 hidden flex-col bg-white text-gray-800 shadow-lg rounded-md w-40 z-50">
+                    <li><a href="#marca" class="block px-4 py-2 hover:bg-gray-100">Marca</a></li>
+                </ul>
+            </li>          
+            <li><a href="#local" class="hover:text-purple-900 transition font-bold">Local</a></li>
+            <li><a href="programacao.html" class="hover:text-purple-900 transition font-bold">Programação</a></li>
+            <li><a href="comissao.html" class="hover:text-purple-900 transition font-bold">Comissão</a></li>
+            <li><a href="submissoes.html" class="hover:text-purple-900 transition font-bold">Submissões</a></li>
+            <li><a href="#inscricao" class="hover:text-purple-900 transition font-bold">Inscrição</a></li>
+            <li><a href="#instituicoes" class="hover:text-purple-900 transition font-bold">Instituições Parceiras</a></li>
+            <li><a href="mailto:lawomeninstem@gmail.com" class="hover:text-purple-900 transition font-bold">Contato</a></li>
+          </ul>
+          
     </nav>
 
     <!--BANNER-->
-    <section class="relative bg-[url('assets/floral1.png')] bg-cover bg-center min-h-screen">
+    <section id="index" class="relative bg-[url('assets/floral1.png')] bg-cover bg-center min-h-screen ">
         <div class="absolute inset-0 bg-blue-100/50"></div>
-               
-        <div class="relative z-10 container mx-auto px-6 md:px-20 py-10 grid md:grid-cols-2 items-center gap-8">
-            <div class="md:pr-10">
-                <h1 class="text-5xl md:text-5xl font-bold leading-tight">
-                    <a style="color: #673FBC;">Fórum de Mulheres<br>em STEM</a><br>
-                    <a style="color: #1FB7BF;">da América Latina</a>
-                </h1>
-                <h2 class="mt-5">
-                    <a class="text-2xl">29 a 31 de Julho • Brasília/DF</a>
-                </h2>
-                <p class="mt-5 text-lg md:text-xl max-w-md">
-                    Experiências compartilhadas para a construção de um futuro inclusivo e inovador
-                </p>
-                <a href="#" class="mt-8 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
-                    Faça a sua inscrição
-                </a>
-            </div>
-
-            <div class="flex justify-center mt-12">
-                <img id="continenteZoom"
-                    src="assets/logo-continente.png"
-                    alt="Logo do Fórum"
-                    class="max-w-full w-[80%] md:w-[100%] lg:w-[110%] xl:w-[120%] transition-transform duration-300 ease-in-out">
-            </div>
+      
+        <div class="relative z-10 container mx-auto md:px-20 py-16 grid md:grid-cols-2 items-center gap-8">
+          <!-- Texto -->
+          <div class="md:pr-10">
+            <h1 class="text-5xl md:text-6xl xl:text-6xl font-bold leading-tight">
+              <a style="color: #673FBC;">Fórum de Mulheres<br>em STEM</a><br>
+              <a style="color: #1FB7BF;">da América Latina</a>
+            </h1>
+            <h2 class="mt-6">
+              <a class="text-2xl md:text-3xl font-bold">29 a 31 de Julho • Brasília/DF</a>
+            </h2>
+            <p class="mt-6 text-xl md:text-2xl max-w-md leading-relaxed">
+              Experiências compartilhadas para a construção de um futuro inclusivo e inovador
+            </p>
+            <a href="#" class="mt-10 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
+              Faça a sua inscrição
+            </a>
+          </div>
+      
+          <!-- Imagem -->
+          <div class="flex justify-center mt-20 md:mt-45">
+            <img id="continenteZoom"
+              src="assets/logo-continente.png"
+              alt="Logo do Fórum"
+              class="max-w-full w-[140%] md:w-[160%] xl:w-[180%] scale-110 md:scale-125 transition-transform duration-300 ease-in-out">
+          </div>
         </div>
-    </section>
+      </section>
+      
 
     <section id="sobre" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
         <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
             <div class="md:pr-10"><br>
                 <p class="text-2xl font-bold mt-2">Sobre o evento</p>
-
                 <h2 class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
                     <strong>Você já ouviu falar sobre o LAWomenSTEM?</strong>
                 </h2>
-                
                 <br>
-
                 <p class="text-lg mt-2">
                     Esteja conosco no maior encontro de Mulheres em STEM da América Latina Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina</strong><br>
                     Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina </strong>
@@ -97,7 +110,7 @@
     <section id="local" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
         <div class="container mx-auto grid md:grid-cols-2 items-start gap-10 px-6 py-12">
             <div class="md:pr-10">
-            <h2 class="text-4xl md:text-5xl font-semibold text-[#673FBC] mb-5">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#673FBC] mb-5">
                 Brasília • Distrito Federal
             </h2>
         
@@ -127,7 +140,7 @@
             <div class="relative w-full">
             <!-- Carrossel -->
             <div id="carousel-container" class="block h-80 rounded-2xl overflow-hidden shadow-lg">
-                <img id="carousel-image" src="assets/foto1.jpg" class="w-full h-full object-cover transition duration-500" />
+                <img id="carousel-image" src="assets/carrosel_bsb/esplanada.jpg" class="w-full h-full object-cover transition duration-500" />
                 <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
                 <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
             </div>
@@ -142,37 +155,106 @@
             </div>
         </div>
     </section>
-        <br>
-        <br>
-        <br>
-        <br>
-    <footer class="bg-gray-600 text-center mg:text-left">
-        <div class = "max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
 
-            <div class = "flex flex-col items-center md:items-start">
-                <img src="assets/logo-continente.png" alt="Logo do Fórum" class="w-40 mb-2 transform transition-transform duration-500 hover:scale-110">
-                <span class="text-sm text-gray-100">29 A 31 DE JULHO - BRASÍLIA-DF </span>
+    <section id="instituicoes">
+        <div class="flex flex-col items-center justify-center mt-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#673FBC] mb-5">
+                Instituições Proponente:
+            </h2>
+            <a href="https://www.unb.br/">
+                <img src="assets/instituicao/unb.png" Alt="Universidade de Brasília" class="flex flex-col justify-center w-50 h-14 mt-6"/>
+            </a>
+        </div> 
+            
+        <div class="flex flex-col items-center justify-center mt-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#673FBC]">
+                Instituições Parceiras:
+            </h2>
+            <div class="flex flex-row justify-center items-center gap-44">
+                <a href="https://www.iesb.br/">
+                    <img src="assets/instituicao/iesb.png" alt="IESB" class="h-24 md:h-32 object-contain" />
+                </a>
+                <a href="https://www.udf.edu.br/">
+                    <img src="assets/instituicao/udf.png" alt="UDF" class="h-24 md:h-60 object-contain" />
+                </a>
             </div>
+            <div class="flex flex-row justify-center items-center gap-24">
+                <a href="https://www.ifb.edu.br/">
+                    <img src="assets/instituicao/IFB.png" alt="IFB" class="h-24 md:h-24 object-contain" />
+                </a>
+                <a href="https://ucb.catolica.edu.br/">
+                    <img src="assets/instituicao/ucb.png" alt="UCB" class="h-24 md:h-22 object-contain" />
+                </a>
+                <a href="https://www.universidade.df.gov.br/">
+                    <img src="assets/instituicao/undf.png" alt="UNDF" class="h-24 md:h-24 object-contain" />
+                </a>
+           </div>
+        </div>
 
-            <div class="text-center md:text-right">
-                <h2 class="text-xl font-bold text-gray-200 mb-2">SIGA NOSSAS REDES SOCIAIS</h2>
-                <div class="flex justify-center md:justify-end gap-4 mb-4">
-                    <a href="https://www.linkedin.com/company/lawomenstem/" target="_blank" class="text-gray-600 hover:text-purple-600 transition">
-                        <img src="assets/redes-sociais/linkedin.png" alt="LinkedIn" class="w-8 h-8">
-                    </a>
+        <div class="flex flex-col items-center justify-center mt-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#673FBC]">
+                Patrocinadores:
+            </h2>
+            <a href="https://www.fap.df.gov.br/">
+                <img src="assets/instituicao/fapdf.png" Alt="FAPDF" class="flex flex-col justify-center w-50 h-32 mt-6"/>
+            </a>
+        </div> 
+
+
+        <div class="flex flex-col items-center justify-center mt-12">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#673FBC] mb-5">
+                Agência de Turismo Oficial :
+            </h2>
+            <a href="https://www.instagram.com/rsturismoeventos/">
+                <img src="assets/instituicao/rs.png" Alt="Grupo RS Turismo" class="flex flex-col justify-center w-50 h-32 mt-6"/>
+            </a>
+        </div> 
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="bg-gray-800 text-gray-200 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
+        
+            <!-- Coluna 1: Logo + Data -->
+            <div class="flex flex-col items-center md:items-start">
+            <img src="assets/logo-continente.png" alt="Logo do Fórum" class="w-40 mb-3 hover:scale-110 transition-transform duration-300">
+            <span class="text-sm font-medium tracking-wide font-bold">29 A 31 DE JULHO - BRASÍLIA-DF</span>
+            </div>
+        
+            <!-- Coluna 2: Redes Sociais -->
+            <div class="flex flex-col items-center">
+            <h2 class="text-xl font-semibold mb-4">SIGA NOSSAS REDES SOCIAIS</h2>
+            <div class="flex gap-6 items-center">
+                <a href="https://www.linkedin.com/company/latin-american-forum-of-women-in-stem/posts/?feedView=all" target="_blank" aria-label="LinkedIn">
+                    <img src="assets/redes-sociais/linkedin.png" alt="LinkedIn" class="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300">
+                </a>
+                <a href="https://www.instagram.com/seuperfil" target="_blank" aria-label="Instagram">
+                    <img src="assets/redes-sociais/Instagram.png" alt="Instagram" class="w-10 h-10 object-contain hover:scale-110 transition-transform duration-300">
+                </a>
                 </div>
             </div>
+        
+            <!-- Coluna 3: Contato -->
+            <div class="flex flex-col items-center md:items-start">
+            <h2 class="text-xl font-semibold mb-4">CONTATO</h2>
+            <p class="text-sm mb-1">Email: <a href="mailto:lawomeninstem@gmail.com" class="underline hover:text-purple-500">lawomeninstem@gmail.com</a></p>
+            </div>
+        
         </div>
-
-        <hr class="border-t border-gray-300 my-4 mx-4"/>
-
-        <div class="text-center text-sm text-gray-100 pb-4 px-4">
-            Copyright © 2025. Todos os Direitos Reservados.
-            Desenvolvido por <a href=" https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-100 font-semibold">Ana Caroline</a> e 
-            <a href="https://www.linkedin.com/in/adrielly-lima-aa297a210/" class="text-gray-100 font-semibold">Adrielly Lima</a>.
+        
+        <hr class="border-gray-700 my-8 mx-auto max-w-7xl" />
+        
+        <div class="text-center text-sm text-gray-400 px-6">
+            Copyright © 2025. Todos os Direitos Reservados. Desenvolvido por
+            <a href="https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="underline hover:text-purple-500 font-semibold">Ana Caroline</a>
+            e
+            <a href="https://www.linkedin.com/in/adrielly-lima-aa297a210/" target="_blank" class="underline hover:text-purple-500 font-semibold">Adrielly Lima</a>.
         </div>
-
-    </footer>
+        </footer>
+        
 
 
     <!-- Zoom do mapa principal -->
@@ -237,8 +319,33 @@
             map.classList.remove("hidden");
           }
         }
-      </script>
-      
+    </script>
+        
+    <script>
+        const menu = document.getElementById('menu-sobre');
+        const btn = document.getElementById('btn-sobre');
+        const submenu = document.getElementById('submenu-sobre');
+        let timeout;
+    
+        function openMenu() {
+        clearTimeout(timeout);
+        submenu.classList.remove('hidden');
+        btn.querySelector('svg').classList.add('rotate-180');
+        }
+    
+        function closeMenu() {
+        timeout = setTimeout(() => {
+            submenu.classList.add('hidden');
+            btn.querySelector('svg').classList.remove('rotate-180');
+        }, 300); // espera 300ms antes de fechar
+        }
+    
+        btn.addEventListener('mouseenter', openMenu);
+        btn.addEventListener('mouseleave', closeMenu);
+        submenu.addEventListener('mouseenter', openMenu);
+        submenu.addEventListener('mouseleave', closeMenu);
+    </script>
+        
       
 </body>
 
