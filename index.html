@@ -35,9 +35,7 @@
     <!--BANNER-->
     <section class="relative bg-[url('assets/floral1.png')] bg-cover bg-center min-h-screen">
         <div class="absolute inset-0 bg-blue-100/50"></div>
-        
-        <!-- <div class="absolute top-0 right-0 w-80 h-80 bg-yellow-400 rounded-full blur-3xl opacity-30 pointer-events-none z-10"></div> -->
-        
+               
         <div class="relative z-10 container mx-auto px-6 md:px-20 py-10 grid md:grid-cols-2 items-center gap-8">
             <div class="md:pr-10">
                 <h1 class="text-5xl md:text-5xl font-bold leading-tight">
@@ -63,20 +61,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section class="relative bg-cover bg-center min-h-screen flex items-center px-6 md:px-20 py-10">
-        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8">
-            <div class="flex justify-center">    
-                <img src="assets/date.png" alt="Ícone de calendário" class="w-full max-w-2xl xl:max-w-3xl transform transition-transform duration-500 hover:scale-110">
-            </div>
-            <div class="md:pr-10">
-                <h2 class="text-2xl font-semibold">
-                    <span style="color: #1FB7BF;"><strong>SAVE THE DATE</strong></span></h2>
-                <p class="text-lg mt-2">29 a 31 de julho de 2025</p>
-                <p class="text-2xl md:text-3xl text-white mt-2">Esteja conosco no maior encontro de<br><strong>Mulheres em STEM da América Latina</strong></p>
-            </div>
-        </div>
-    </section> -->
 
     <section id="sobre" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
         <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
@@ -110,39 +94,58 @@
         </div>
     </section>
 
-    <section id="local" class="relative bg-cover bg-center md:px-20 py-10">
-        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
-            <div class="md:pr-10"><br>
-                <p class="text-2xl font-bold mt-2">Local do Evento</p>
-
-                <h2 class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
-                    <strong>Universidade de Brasília</strong>
-                </h2>
-
-                <p class="text-xl font-bold mt-2">Departamento de Ciência da Computação e Estatística</p>
-                <br>
-
-                <p class="text-lg mt-2">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-
-                </p>
-
-            </div> 
-
-            <div class="w-full max-w-lg mx-auto rounded-lg overflow-hidden shadow-md border border-purple-300">     
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[300px] rounded-2xl"></iframe>
+    <section id="local" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-2 items-start gap-10 px-6 py-12">
+            <div class="md:pr-10">
+            <h2 class="text-4xl md:text-5xl font-semibold text-[#673FBC] mb-5">
+                Brasília • Distrito Federal
+            </h2>
+        
+            <!-- Abas -->
+            <div class="flex border-b border-blue-600 mb-8 space-x-8 text-lg font-semibold">
+                <button onclick="showTab('cidade')" id="tab-cidade" class="pb-2 border-b-4 border-[#673FBC] text-[#000000] hover:text-[#673FBC]">Conheça a cidade</button>
+                <button onclick="showTab('local')" id="tab-local" class="pb-2 text-[#000000] hover:text-[#673FBC]">Conheça o local do evento</button>
             </div>
-             
+        
+            <div id="tab-content-cidade" class="block">
+                <p class="text-lg leading-relaxed text-justify">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+            </div>
+        
+            <div id="tab-content-local" class="hidden mt-4">
+                <p class="text-lg">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                </p>
+            </div>
+            </div>
+        
+            <div class="relative w-full">
+            <!-- Carrossel -->
+            <div id="carousel-container" class="block h-80 rounded-2xl overflow-hidden shadow-lg">
+                <img id="carousel-image" src="assets/foto1.jpg" class="w-full h-full object-cover transition duration-500" />
+                <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
+                <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
+            </div>
+        
+            <!-- Mapa -->
+            <div id="map-container" class="hidden w-full mt-4 rounded-lg overflow-hidden shadow-md border border-purple-300">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" 
+                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
         </div>
     </section>
-
-    <br>
-    <br>
-    <br>
-    <br>
+        <br>
+        <br>
+        <br>
+        <br>
     <footer class="bg-gray-600 text-center mg:text-left">
         <div class = "max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
 
@@ -172,6 +175,7 @@
     </footer>
 
 
+    <!-- Zoom do mapa principal -->
     <script>
         window.addEventListener('scroll', () => {
             const floral = document.getElementById('continenteZoom');
@@ -180,6 +184,62 @@
             floral.style.transform = `scale(${zoom})`;
         });
     </script>
+   
+   <!-- carrosel das fotos -->
+   <script>
+        const images = ['assets/carrosel_bsb/esplanada.jpg', 'assets/carrosel_bsb/campus.jpg', 'assets/carrosel_bsb/cic.jpg'];
+        let currentIndex = 0;
+
+        function showImage(index) {
+            document.getElementById("carousel-image").src = images[index];
+        }
+
+        function prevImage() {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        }
+
+        function nextImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        }
+    </script>
+
+    <!-- Mudança nas tabs do local -->
+    <script>
+        function showTab(tab) {
+          const cidadeBtn = document.getElementById("tab-cidade");
+          const localBtn = document.getElementById("tab-local");
+      
+          const cidadeContent = document.getElementById("tab-content-cidade");
+          const localContent = document.getElementById("tab-content-local");
+      
+          const carousel = document.getElementById("carousel-container");
+          const map = document.getElementById("map-container");
+      
+          if (tab === "cidade") {
+            cidadeBtn.classList.add("border-b-4", "border-[#673FBC]");
+            localBtn.classList.remove("border-b-4", "border-[#673FBC]");
+      
+            cidadeContent.classList.remove("hidden");
+            localContent.classList.add("hidden");
+      
+            carousel.classList.remove("hidden");
+            map.classList.add("hidden");
+          } else {
+            cidadeBtn.classList.remove("border-b-4", "border-[#673FBC]");
+            localBtn.classList.add("border-b-4", "border-[#673FBC]");
+      
+            cidadeContent.classList.add("hidden");
+            localContent.classList.remove("hidden");
+      
+            carousel.classList.add("hidden");
+            map.classList.remove("hidden");
+          }
+        }
+      </script>
+      
+      
 </body>
 
 </html>
