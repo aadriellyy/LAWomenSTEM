@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt" id="organizacao">
+<html lang="pt-br" id="organizacao">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organização</title>
+    <link rel="icon" type="logo-continente" href="assets/logo-continente_old.png" /> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">  
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -13,36 +14,46 @@
     </style>
 </head>
 
-<body class="bg-gradient-to-b from-black to-gray-900 text-white">
+<body class="bg-gradient-to-b bg-blue-100 text-white">
     
-    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-gray-600 bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
         <div class="text-xl font-bold">
-            <a href="#">LAWomenSTEM</a>
+            <a href="index.html">LAWomenSTEM</a>
         </div>
         <ul class="flex gap-6 text-base">
-            <li><a href="index.html" class="hover:text-purple-400 transition">Sobre</a></li>
-            <li><a href="#organizacao" class="hover:text-purple-400 transition">Organização</a></li>
-            <li><a href="#submissoes" class="hover:text-purple-400 transition">Submissões</a></li>
-            <li><a href="#inscricao" class="hover:text-purple-400 transition">Inscrição</a></li>
-            <li><a href="#contato" class="hover:text-purple-400 transition">Contato</a></li>
+            <li><a href="index.html" class="hover:text-purple-900 transition font-bold">Home</a></li>  
+            <li class="relative" id="menu-sobre">
+                <div id="btn-sobre" class="flex items-center gap-1 font-bold hover:text-purple-900 cursor-pointer select-none">
+                    <a href="index.html#sobre">Sobre</a>
+                    <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+            
+                <ul id="submenu-sobre" class="absolute left-0 top-full mt-1 hidden flex-col bg-white text-gray-800 shadow-lg rounded-md w-40 z-50">
+                    <li><a href="#marca" class="block px-4 py-2 hover:bg-gray-100">Marca</a></li>
+                </ul>
+            </li>          
+            <li><a href="index.html#local" class="hover:text-purple-900 transition font-bold">Local</a></li>
+            <li><a href="programacao.html" class="hover:text-purple-900 transition font-bold">Programação</a></li>
+            <li><a href="comissao.html" class="hover:text-purple-900 transition font-bold">Comissão</a></li>
+            <li><a href="submissoes.html" class="hover:text-purple-900 transition font-bold">Submissões</a></li>
+            <li><a href="#inscricao" class="hover:text-purple-900 transition font-bold">Inscrição</a></li>
+            <li><a href="index.html#instituicoes" class="hover:text-purple-900 transition font-bold">Instituições Parceiras</a></li>
+            <li><a href="mailto:lawomeninstem@gmail.com" class="hover:text-purple-900 transition font-bold">Contato</a></li>
         </ul>
     </nav>
 
-    <section class="relative bg-cover bg-center min-h-screen">
-        <div class="w-full h-[250px] overflow-hidden">
-            <img src="assets/floral.png"
-                alt="Floral"
-                class="w-full h-full object-cover">
-        </div>
-        <div class="relative z-10 container mx-auto px-6 md:px-20 py-10 grid items-center gap-8">
-            <h1 class="text-4xl md:text-5xl font-bold leading-tight text-center">
-                <span style="color: #673FBC;"><strong>Organização</strong></span>
+    <section>
+        <div class="flex z-10 container mx-auto px-6 md:px-50 py-10 grid items-center gap-8 ">
+            <h1 style="color: #673fbc;" class="text-4xl mt-20 md:text-6xl font-bold leading-tight text-center">
+                Comissão
             </h1>
-            <p class="text-center text-1xl md:text-2xl-center">
-                <span style="color: #bdc3c7;">
+            <p class="text-center text-2xl md:text-2xl-center">
+                <a style="color: #000000">
                 A Comissão Organizadora é composta por um grupo de mulheres comprometidas com 
                 a promoção da inclusão e diversidade nas áreas de ciência, tecnologia, engenharia e matemática.
-                </span>
+                </a>
             </p>
             <hr class="border-t border-purple-800 my-4">
         </div>
@@ -50,16 +61,16 @@
         
         <div class="container mx-auto px-6 md:px-20 py-10 grid gap-16 mt-15">
             <div class="md:pr-10 align-items-center mx-auto">
-                <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center">Coordenação Geral</h2>
+                <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center" style="color: #673fbc;">Coordenação Geral</h2>
             </div>
-            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/maristela.png"
                     alt="Maristela Holanda"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h2 class="text-lg font-bold leading-tight">
-                    Maristela Terto de<br>Holanda - UnB
+                    Maristela Holanda - UnB
                 </h2>
                 <p class="text-white mt-2">Coordenadora Geral da LAWomenSTEM</p>
                 <a href="#" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
@@ -70,10 +81,10 @@
 
 
         <div class="md:pr-10 align-items-center mx-auto mt-10">
-            <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center">Comissão Organizadora</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center" style="color: #673fbc;">Comissão Organizadora</h2>
         </div>
         <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
-            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/aleteia.png"
                     alt="Maristela Holanda"
@@ -84,7 +95,7 @@
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
             </div>
-            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/maria-emilia.png"
                     alt="Maristela Holanda"
@@ -95,7 +106,7 @@
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
             </div>
-            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/carla.png"
                     alt="Maristela Holanda"
@@ -106,7 +117,7 @@
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
             </div>
-            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/leticia.png"
                     alt="Maristela Holanda"
@@ -121,36 +132,71 @@
             
     </section>
 
-    <br><br><br><br><br><br><br>
-
-    <footer class="bg-gray-600 text-center mg:text-left">
-        <div class = "max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
-
-            <div class = "flex flex-col items-center md:items-start">
-                <img src="assets/logo-continente.png" alt="Logo do Fórum" class="w-40 mb-2 transform transition-transform duration-500 hover:scale-110">
-                <span class="text-sm text-gray-100">29 A 31 DE JULHO - BRASÍLIA-DF </span>
-            </div>
-
-            <div class="text-center md:text-right">
-                <h2 class="text-xl font-bold text-gray-200 mb-2">SIGA NOSSAS REDES SOCIAIS</h2>
-                <div class="flex justify-center md:justify-end gap-4 mb-4">
-                    <a href="https://www.linkedin.com/company/lawomenstem/" target="_blank" class="text-gray-600 hover:text-purple-600 transition">
-                        <img src="assets/redes-sociais/linkedin.png" alt="LinkedIn" class="w-8 h-8">
-                    </a>
-                </div>
-            </div>
+    <br><br><br><br>
+    <footer class="bg-gray-800 text-gray-200 py-10">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-center md:justify-between items-center gap-10">
+      
+          <!-- Coluna 1: Logo + Data -->
+          <div class="flex flex-col items-center md:items-start">
+            <img src="assets/logo-continente.png" alt="Logo do Fórum" class="w-40 mb-3 hover:scale-110 transition-transform duration-300">
+            <span class="text-sm font-medium tracking-wide font-bold">29 A 31 DE JULHO - BRASÍLIA-DF</span>
+          </div>
+      
+          <!-- Coluna 2: Redes Sociais -->
+          <div class="flex flex-col items-center">
+            <h2 class="text-xl font-semibold mb-4">SIGA NOSSAS REDES SOCIAIS</h2>
+            <div class="flex gap-6 items-center">
+                <a href="https://www.linkedin.com/company/latin-american-forum-of-women-in-stem/posts/?feedView=all" target="_blank" aria-label="LinkedIn">
+                  <img src="assets/redes-sociais/linkedin.png" alt="LinkedIn" class="w-14 h-14 object-contain hover:scale-110 transition-transform duration-300">
+                </a>
+                <a href="https://www.instagram.com/seuperfil" target="_blank" aria-label="Instagram">
+                  <img src="assets/redes-sociais/Instagram.png" alt="Instagram" class="w-10 h-10 object-contain hover:scale-110 transition-transform duration-300">
+                </a>
+              </div>
+          </div>
+      
+          <!-- Coluna 3: Contato -->
+          <div class="flex flex-col items-center md:items-start">
+            <h2 class="text-xl font-semibold mb-4">CONTATO</h2>
+            <p class="text-sm mb-1">Email: <a href="mailto:lawomeninstem@gmail.com" class="underline hover:text-purple-500">lawomeninstem@gmail.com</a></p>
+          </div>
+      
         </div>
-
-        <hr class="border-t border-gray-300 my-4 mx-4"/>
-
-        <div class="text-center text-sm text-gray-100 pb-4 px-4">
-            Copyright © 2025. Todos os Direitos Reservados.
-            Desenvolvido por <span class="text-gray-100 font-semibold">Ana Caroline</span> e 
-            <span class="text-gray-100 font-semibold">Adrielly Lima</span>.
+      
+        <hr class="border-gray-700 my-8 mx-auto max-w-7xl" />
+      
+        <div class="text-center text-sm text-gray-400 px-6">
+          Copyright © 2025. Todos os Direitos Reservados. Desenvolvido por
+          <a href="https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="underline hover:text-purple-500 font-semibold">Ana Caroline</a>
+          e
+          <a href="https://www.linkedin.com/in/adrielly-lima-aa297a210/" target="_blank" class="underline hover:text-purple-500 font-semibold">Adrielly Lima</a>.
         </div>
+      </footer>
 
-    </footer>
-
+      <script>
+        const menu = document.getElementById('menu-sobre');
+        const btn = document.getElementById('btn-sobre');
+        const submenu = document.getElementById('submenu-sobre');
+        let timeout;
+    
+        function openMenu() {
+        clearTimeout(timeout);
+        submenu.classList.remove('hidden');
+        btn.querySelector('svg').classList.add('rotate-180');
+        }
+    
+        function closeMenu() {
+        timeout = setTimeout(() => {
+            submenu.classList.add('hidden');
+            btn.querySelector('svg').classList.remove('rotate-180');
+        }, 300); // espera 300ms antes de fechar
+        }
+    
+        btn.addEventListener('mouseenter', openMenu);
+        btn.addEventListener('mouseleave', closeMenu);
+        submenu.addEventListener('mouseenter', openMenu);
+        submenu.addEventListener('mouseleave', closeMenu);
+    </script>
 </body>
 
 </html>
