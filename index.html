@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,36 +13,42 @@
     </style>
 </head>
 
-<body class="bg-gradient-to-b from-black to-gray-900 text-white">
+<body class="bg-gradient-to-b bg-blue-100 text-black">
     
-    <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
+    <nav class="fixed top-0 left-0 w-full z-50 bg-gray-600 bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
         <div class="text-xl font-bold">
             <a href="#">LAWomenSTEM</a>
         </div>
         <ul class="flex gap-6 text-base">
-            <li><a href="#sobre" class="hover:text-purple-400 transition">Sobre</a></li>
-            <li><a href="organizacao.html" class="hover:text-purple-400 transition">Organização</a></li>
-            <li><a href="#submissoes" class="hover:text-purple-400 transition">Submissões</a></li>
-            <li><a href="#inscricao" class="hover:text-purple-400 transition">Inscrição</a></li>
-            <li><a href="#contato" class="hover:text-purple-400 transition">Contato</a></li>
+            <li><a href="#" class="hover:text-purple-900 transition">Home</a></li>
+            <li><a href="#sobre" class="hover:text-purple-900 transition">Sobre</a></li>
+            <li><a href="#local" class="hover:text-purple-900 transition">Local</a></li>
+            <li><a href="programacao.html" class="hover:text-purple-900 transition">Programação</a></li>
+            <li><a href="comissao.html" class="hover:text-purple-900 transition">Comissão</a></li>
+            <li><a href="submissoes.html" class="hover:text-purple-900 transition">Submissões</a></li>
+            <li><a href="#inscricao" class="hover:text-purple-900 transition">Inscrição</a></li>
+            <li><a href="instituicao.html" class="hover:text-purple-900 transition">Instituições Parceiras</a></li>
+            <li><a href="#contato" class="hover:text-purple-900 transition">Contato</a></li>
         </ul>
     </nav>
 
     <!--BANNER-->
-    <section class="relative bg-[url('assets/floral.png')] bg-cover bg-center min-h-screen">
+    <section class="relative bg-[url('assets/floral1.png')] bg-cover bg-center min-h-screen">
+        <div class="absolute inset-0 bg-blue-100/50"></div>
         
-        <div class="absolute top-0 right-0 w-80 h-80 bg-yellow-400 rounded-full blur-3xl opacity-30 pointer-events-none z-10"></div>
+        <!-- <div class="absolute top-0 right-0 w-80 h-80 bg-yellow-400 rounded-full blur-3xl opacity-30 pointer-events-none z-10"></div> -->
         
         <div class="relative z-10 container mx-auto px-6 md:px-20 py-10 grid md:grid-cols-2 items-center gap-8">
             <div class="md:pr-10">
-                <h1 class="text-4xl md:text-5xl font-bold leading-tight">
-                    <span style="color: #673FBC;">Fórum de Mulheres<br>em STEM</span><br>
-                    <span style="color: #1FB7BF;">da América Latina</span>
+                <h1 class="text-5xl md:text-5xl font-bold leading-tight">
+                    <a style="color: #673FBC;">Fórum de Mulheres<br>em STEM</a><br>
+                    <a style="color: #1FB7BF;">da América Latina</a>
                 </h1>
-                <p class="mt-6 text-lg md:text-xl max-w-md">
-                    Experiências compartilhadas<br>
-                    para a construção de um<br>
-                    futuro inclusivo e inovador
+                <h2 class="mt-5">
+                    <a class="text-2xl">29 a 31 de Julho • Brasília/DF</a>
+                </h2>
+                <p class="mt-5 text-lg md:text-xl max-w-md">
+                    Experiências compartilhadas para a construção de um futuro inclusivo e inovador
                 </p>
                 <a href="#" class="mt-8 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
                     Faça a sua inscrição
@@ -58,7 +64,7 @@
         </div>
     </section>
 
-    <section class="relative bg-cover bg-center min-h-screen flex items-center px-6 md:px-20 py-10">
+    <!-- <section class="relative bg-cover bg-center min-h-screen flex items-center px-6 md:px-20 py-10">
         <div class="container mx-auto grid md:grid-cols-2 items-center gap-8">
             <div class="flex justify-center">    
                 <img src="assets/date.png" alt="Ícone de calendário" class="w-full max-w-2xl xl:max-w-3xl transform transition-transform duration-500 hover:scale-110">
@@ -70,34 +76,73 @@
                 <p class="text-2xl md:text-3xl text-white mt-2">Esteja conosco no maior encontro de<br><strong>Mulheres em STEM da América Latina</strong></p>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="sobre" class="relative bg-cover bg-center flex items-center px-6 md:px-20 py-10">
-        <div class="container mx-auto grid md:grid-cols-2 items-center gap-4">
+    <section id="sobre" class="relative bg-cover bg-center mt-12 md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
             <div class="md:pr-10"><br>
-                <p class="text-lg mt-2">Sobre o evento</p><br>
-                <h2 class="text-4xl md:text-5xl font-semibold">
-                    <span style="color: #673FBC;"><strong>Você já ouviu falar sobre o LAWomenSTEM?</strong></span>
-                </h2><br>
-                <p class="text-lg mt-2">Esteja conosco no maior encontro de Mulheres em STEM da América Latina Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina</strong><br>
-                Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina </strong>
-                <br><br>
-                O objetivo geral do evento é reunir lideranças femininas da América Latina nas áreas STEM para colaborações em 
-                projetos de ensino, pesquisa e extensão, de modo a promover a inclusão e a participação ativa de meninas e mulheres nas 
-                áreas STEM. O foco é ampliar o acesso, a representatividade e o engajamento feminino neste setor estratégico e inovador 
-                numa região com desafios grandes e complexos na América Latina e especialmente no DF, promovendo a articulação entre os países dessa região. 
+                <p class="text-2xl font-bold mt-2">Sobre o evento</p>
 
+                <h2 class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                    <strong>Você já ouviu falar sobre o LAWomenSTEM?</strong>
+                </h2>
+                
+                <br>
+
+                <p class="text-lg mt-2">
+                    Esteja conosco no maior encontro de Mulheres em STEM da América Latina Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina</strong><br>
+                    Esteja conosco no maior encontro de <strong>Mulheres em STEM da América Latina </strong>
+                    <br>
+                    <br>
+                    O objetivo geral do evento é reunir lideranças femininas da América Latina nas áreas STEM para colaborações em 
+                    projetos de ensino, pesquisa e extensão, de modo a promover a inclusão e a participação ativa de meninas e mulheres nas 
+                    áreas STEM. O foco é ampliar o acesso, a representatividade e o engajamento feminino neste setor estratégico e inovador 
+                    numa região com desafios grandes e complexos na América Latina e especialmente no DF, promovendo a articulação entre os países dessa região. 
                 </p>
 
             </div> 
-           <div class="flex justify-center -mt-16 md:-mt-24">     
-                <img src="assets/sobre-evento-flor.png" alt="Flor" class="w-full max-w-2xl xl:max-w-3xl transform transition-transform duration-500 hover:scale-110">
+
+            <div class="flex justify-center items-center">     
+                <img src="assets/sobre-evento-flor.png" alt="Flor" 
+                class="w-4/5 transition-transform duration-500 hover:scale-110">
             </div>
              
         </div>
     </section>
 
-    <br><br><br><br><br><br><br>
+    <section id="local" class="relative bg-cover bg-center md:px-20 py-10">
+        <div class="container mx-auto grid md:grid-cols-2 items-center gap-8 px-6 py-12">
+            <div class="md:pr-10"><br>
+                <p class="text-2xl font-bold mt-2">Local do Evento</p>
+
+                <h2 class="text-4xl md:text-5xl font-semibold text-[#673FBC]">
+                    <strong>Universidade de Brasília</strong>
+                </h2>
+
+                <p class="text-xl font-bold mt-2">Departamento de Ciência da Computação e Estatística</p>
+                <br>
+
+                <p class="text-lg mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+                </p>
+
+            </div> 
+
+            <div class="w-full max-w-lg mx-auto rounded-lg overflow-hidden shadow-md border border-purple-300">     
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="w-full h-[300px] rounded-2xl"></iframe>
+            </div>
+             
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
     <footer class="bg-gray-600 text-center mg:text-left">
         <div class = "max-w-7xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center md:items-start gap-8">
 
@@ -120,8 +165,8 @@
 
         <div class="text-center text-sm text-gray-100 pb-4 px-4">
             Copyright © 2025. Todos os Direitos Reservados.
-            Desenvolvido por <span class="text-gray-100 font-semibold">Ana Caroline</span> e 
-            <span class="text-gray-100 font-semibold">Adrielly Lima</span>.
+            Desenvolvido por <a href=" https://www.linkedin.com/in/anabraz26?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-gray-100 font-semibold">Ana Caroline</a> e 
+            <a href="https://www.linkedin.com/in/adrielly-lima-aa297a210/" class="text-gray-100 font-semibold">Adrielly Lima</a>.
         </div>
 
     </footer>
