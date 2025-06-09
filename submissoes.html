@@ -11,6 +11,93 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+        @media (max-width: 1024px) {
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            background-color: rgba(75, 85, 99, 0.95);
+            padding: 1rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+
+        nav ul.show {
+            display: flex;
+        }
+
+        nav .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        nav ul li {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #continenteZoom {
+            width: 100%;
+            scale: 1.1 !important;
+        }
+
+        .text-5xl {
+            font-size: 2.25rem;
+        }
+
+        .text-4xl {
+            font-size: 2rem;
+        }
+
+        .text-3xl {
+            font-size: 1.75rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-lg {
+            font-size: 1rem;
+        }
+
+        .text-base {
+            font-size: 0.875rem;
+        }
+
+        .gap-44 {
+            gap: 2rem !important;
+        }
+
+        .gap-24 {
+            gap: 1.5rem !important;
+        }
+
+        .w-50 {
+            width: 60% !important;
+        }
+
+        .h-10 {
+            height: auto !important;
+        }
+
+        .h-22, .h-16, .h-12 {
+            height: auto !important;
+        }
+
+        .md\\:px-20 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
     </style>
 </head>
 
@@ -20,6 +107,9 @@
         <div class="text-xl font-bold">
             <a href="index.html">LAWomenSTEM</a>
         </div>
+        <div class="menu-toggle md:hidden text-white text-2xl mr-16">
+          ☰
+       </div>
         <ul class="flex gap-6 text-base">
           <li><a href="index.html" class="hover:text-purple-900 transition font-bold">Home</a></li>  
           <li class="relative" id="menu-sobre">
@@ -268,6 +358,16 @@
         btn.addEventListener('mouseleave', closeMenu);
         submenu.addEventListener('mouseenter', openMenu);
         submenu.addEventListener('mouseleave', closeMenu);
+    </script>
+
+    <!-- Menu resposivo -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
     </script>
 
 </body>
