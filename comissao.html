@@ -126,7 +126,18 @@
             </li>          
             <li><a href="index.html#local" class="hover:text-purple-900 transition font-bold">Local</a></li>
             <li><a href="programacao.html" class="hover:text-purple-900 transition font-bold">Programação</a></li>
-            <li><a href="comissao.html" class="hover:text-purple-900 transition font-bold">Comissão</a></li>
+            <li class="relative" id="menu-comissao">
+                <div id="btn-comissao" class="flex items-center gap-1 font-bold hover:text-purple-900 cursor-pointer select-none">
+                    <a href="comissao.html">Comissão</a>
+                    <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+                <ul id="submenu-comissao" class="absolute left-0 top-full mt-1 hidden flex-col bg-white text-gray-800 shadow-lg rounded-md w-60 z-50">
+                    <li><a href="#organizadora" class="block px-4 py-2 hover:bg-gray-100">Comissão Organizadora</a></li>
+                    <li><a href="#tecnico" class="block px-4 py-2 hover:bg-gray-100">Comissão Técnico-Científica</a></li>
+                </ul>
+            </li>         
             <li><a href="submissoes.html" class="hover:text-purple-900 transition font-bold">Submissões</a></li>
             <li><a href="#inscricao" class="hover:text-purple-900 transition font-bold">Inscrição</a></li>
             <li><a href="index.html#instituicoes" class="hover:text-purple-900 transition font-bold">Instituições Parceiras</a></li>
@@ -136,8 +147,8 @@
 
     <section>
         <div class="flex z-10 container mx-auto px-6 md:px-50 py-10 grid items-center gap-8 ">
-            <h1 style="color: #673fbc;" class="text-4xl mt-20 md:text-6xl font-bold leading-tight text-center">
-                Comissão
+            <h1 style="color: #673fbc;" class="text-3xl mt-20 md:text-5xl font-bold leading-tight text-center">
+                Comissão Organizadora
             </h1>
             <p class="text-center text-2xl md:text-2xl-center">
                 <a style="color: #000000">
@@ -149,11 +160,11 @@
         </div>
     
         
-        <div class="container mx-auto px-6 md:px-20 py-10 grid gap-16 mt-15">
+        <div class="container mx-auto px-6 md:px-20 py-10 grid gap-16 mt-15 align-items-center" id="organizadora">
             <div class="md:pr-10 align-items-center mx-auto">
-                <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center" style="color: #673fbc;">Coordenação Geral</h2>
+                <h2 class="text-3xl md:text-4xl font-semibold leading-tight" style="color: #673fbc;">Coordenação Geral</h2>
             </div>
-            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center mx-auto">
                 <img
                     src="assets/organizacao/maristela.png"
                     alt="Maristela Holanda"
@@ -163,62 +174,311 @@
                     Maristela Holanda - UnB
                 </h2>
                 <p class="text-white mt-2">Coordenadora Geral da LAWomenSTEM</p>
-                <a href="#" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
-                    Entre em contato
+                <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    Conheça mais
                 </a>
             </div>
         </div>
 
 
         <div class="md:pr-10 align-items-center mx-auto mt-10">
-            <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center" style="color: #673fbc;">Comissão Organizadora</h2>
+            <h2 class="text-3xl md:text-4xl font-semibold leading-tight text-center" style="color: #673fbc;">Equipe</h2>
         </div>
         <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
-            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/aleteia.png"
-                    alt="Maristela Holanda"
+                    alt="Aleteia de Araujo"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h2 class="text-lg font-bold leading-tight">
                     Aleteia Patricia Favacho<br>de Araujo - UnB
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    Conheça mais
+                </a>
             </div>
-            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/maria-emilia.png"
-                    alt="Maristela Holanda"
+                    alt="Maria Emilia"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h2 class="text-lg font-bold leading-tight">
                     Maria Emilia Machado<br>Telles Walter - UnB
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    Conheça mais
+                </a>
             </div>
-            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/carla.png"
-                    alt="Maristela Holanda"
+                    alt="Carla Koike"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h2 class="text-lg font-bold leading-tight">
                     Carla Maria Chaves<br>e Cavalcante Koike - UnB
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    Conheça mais
+                </a>
             </div>
-            <div class ="bg-gray-500 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
                 <img
                     src="assets/organizacao/leticia.png"
-                    alt="Maristela Holanda"
+                    alt="Leticia Leite"
                     class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
                 />
                 <h2 class="text-lg font-bold leading-tight">
                     Leticia Lopes<br>Leite - UnB
                 </h2>
                 <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://cic.unb.br/" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    Conheça mais
+                </a>
             </div>
         </div>
+
+        <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <img
+                    src="assets/organizacao/adrielly.png"
+                    alt="Adrielly"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h2 class="text-lg font-bold leading-tight">
+                    Adrielly Lima - UnB
+                </h2>
+                <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://www.linkedin.com/in/adrielly-lima-aa297a210" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    LinkedIn
+                </a>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <img
+                    src="assets/organizacao/maria-emilia.png"
+                    alt="Ana Caroline"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h2 class="text-lg font-bold leading-tight">
+                    Ana Caroline - UnB
+                </h2>
+                <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://www.linkedin.com/in/luana-cruz-a7410022b" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    LinkedIn
+                </a>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <img
+                    src="assets/organizacao/laryssa.jpg"
+                    alt="Laryssa Ferreira"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h2 class="text-lg font-bold leading-tight">
+                    Laryssa Ferreira - UnB
+                </h2>
+                <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://www.linkedin.com/in/laryssaoliferreira?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    LinkedIn
+                </a>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <img
+                    src="assets/organizacao/luana.jpg"
+                    alt="Luana Cruz"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h2 class="text-lg font-bold leading-tight">
+                    Luana Cruz - UnB
+                </h2>
+                <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://www.linkedin.com/in/luana-cruz-a7410022b" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+        <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <img
+                    src="assets/organizacao/leticia.png"
+                    alt="Maria Vitória"
+                    class="w-28 h-28 rounded-full mx-auto mb-4 object-cover"
+                />
+                <h2 class="text-lg font-bold leading-tight">
+                    Maria Vitória - UnB
+                </h2>
+                <p class="text-white mt-2">Coordenadora da LAWomenSTEM</p>
+                <a href="https://www.linkedin.com/in/luana-cruz-a7410022b" target="_blank" class="mt-4 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-6 py-3 rounded font-semibold transition">
+                    LinkedIn
+                </a>
+            </div>
+
+        <hr class="border-gray-700 my-8 mx-auto max-w-7xl" />
+
+
+        <div class="flex z-10 container mx-auto px-6 md:px-50 py-10 grid items-center gap-8" id="tecnico">
+            <h1 style="color: #673fbc;" class="text-3xl mt-20 md:text-5xl font-bold leading-tight text-center">
+                Comissão Técnico-Científica
+            </h1>
+            <p class="text-center text-2xl md:text-2xl-center">
+                <a style="color: #000000">
+                A comissão técnico-científica será composta por docentes de várias instituições de ensino superior
+                do Distrito Federal
+                </a>
+            </p>
+            <hr class="border-t border-purple-800">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Maria Emilia<br>Machado Telles Walter
+                </h2>
+                <p class="text-white mt-2">Professora Aposentada da UnB – <strong>Coordenadora</strong></p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Ana Paula<br>Bernardi da Silva
+                </h2>
+                <p class="text-white mt-2">UCB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Adriana Satico<br>Ferraz 
+                </h2>
+                <p class="text-white mt-2">CEUB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Alba Cristina<br>Magalhães Alves de Melo
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Aleteia Patricia<br>Favacho de Araujo
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Carla Maria<br>Chaves e Cavalcante Koike
+
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Prof. Daniel Saad<br>Nogueira Nunes
+                </h2>
+                <p class="text-white mt-2">IFB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Edna Dias<br>Canedo
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Enam Lima<br>Pires
+                </h2>
+                <p class="text-white mt-2">UnDF</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Prof. Felipe Batista<br>da Silva
+                </h2>
+                <p class="text-white mt-2">CEUB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Fernanda Vinhaes
+                </h2>
+                <p class="text-white mt-2">CEUB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Giovanna Tedesco
+                </h2>
+                <p class="text-white mt-2">IFB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Prof. Igor Leal Souza
+                </h2>
+                <p class="text-white mt-2">UnDF</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Janete Cardoso<br>dos Santos
+                </h2>
+                <p class="text-white mt-2">UDF</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Prof. Jonathan Rosa<br>Moreira
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Juliana Menezes<br>da Nóbrega
+                </h2>
+                <p class="text-white mt-2">CEUB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Leticia Lopes<br>Leite
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+        </div>
+
+        <div class="container mx-auto px-6 md:px-10 py-10 grid gap-20 mt-15 md:grid-cols-4">
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Letícia Toledo<br>Maia Zoby
+                </h2>
+                <p class="text-white mt-2">IESB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                     Profa. Luana Elayne<br>Cunha de Souza
+                </h2>
+                <p class="text-white mt-2">CEUB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Maristela Terto<br>de Holanda
+                </h2>
+                <p class="text-white mt-2">UnB</p>
+            </div>
+            <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Profa. Patricia Moscariello<BR>Rodrigues
+                </h2>
+                <p class="text-white mt-2">IESB</p>
+            </div>
+        </div>
+        <div class ="bg-gray-600 rounded-xl shadow-md hover:shadow-xl hover:scale-105 transform transition duration-300 p-6 w-72 text-center align-items-center mx-auto">
+                <h2 class="text-lg font-bold leading-tight">
+                    Prof. Tiago Leite<br>Pereira
+                </h2>
+                <p class="text-white mt-2">CEUB</p>
+            </div>
             
     </section>
 
@@ -288,6 +548,32 @@
         submenu.addEventListener('mouseenter', openMenu);
         submenu.addEventListener('mouseleave', closeMenu);
     </script>
+
+    <!-- Submenu do comissao -->
+    <script>
+        const btncomissao = document.getElementById('btn-comissao');
+        const submenucomissao = document.getElementById('submenu-comissao');
+        let comissaotimeout;
+
+        function openMenu() {
+            clearTimeout(comissaotimeout);
+            submenucomissao.classList.remove('hidden');
+            btncomissao.querySelector('svg').classList.add('rotate-180');
+        }
+
+        function closeMenu() {
+            comissaotimeout = setTimeout(() => {
+            submenucomissao.classList.add('hidden');
+            btncomissao.querySelector('svg').classList.remove('rotate-180');
+            }, 300);
+        }
+
+        btncomissao.addEventListener('mouseenter', openMenu);
+        btncomissao.addEventListener('mouseleave', closeMenu);
+        submenucomissao.addEventListener('mouseenter', openMenu);
+        submenucomissao.addEventListener('mouseleave', closeMenu);
+    </script>
+
 
     <!-- Menu resposivo -->
     <script>
