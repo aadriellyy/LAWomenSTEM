@@ -11,6 +11,94 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
+        @media (max-width: 1024px) {
+        nav ul {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1rem;
+            background-color: rgba(75, 85, 99, 0.95);
+            padding: 1rem;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            display: none;
+        }
+
+        nav ul.show {
+            display: flex;
+        }
+
+        nav .menu-toggle {
+            display: block;
+            cursor: pointer;
+        }
+
+        nav ul li {
+            width: 100%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #continenteZoom {
+            width: 100%;
+            scale: 1.1 !important;
+        }
+
+        .text-5xl {
+            font-size: 2.25rem;
+        }
+
+        .text-4xl {
+            font-size: 2rem;
+        }
+
+        .text-3xl {
+            font-size: 1.75rem;
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+        }
+
+        .text-lg {
+            font-size: 1rem;
+        }
+
+        .text-base {
+            font-size: 0.875rem;
+        }
+
+        .gap-44 {
+            gap: 2rem !important;
+        }
+
+        .gap-24 {
+            gap: 1.5rem !important;
+        }
+
+        .w-50 {
+            width: 60% !important;
+        }
+
+        .h-10 {
+            height: auto !important;
+        }
+
+        .h-22, .h-16, .h-12 {
+            height: auto !important;
+        }
+
+        .md\\:px-20 {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+    }
     </style>
 </head>
 
@@ -19,8 +107,12 @@
     <nav class="fixed top-0 left-0 w-full z-50 bg-gray-600 bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
         <div class="text-xl font-bold">
             <a href="index.html">LAWomenSTEM</a>
+        
         </div>
-        <ul class="flex gap-6 text-base relative">
+        <div class="menu-toggle md:hidden text-white text-2xl mr-16">
+            ☰
+        </div>
+        <ul class="hidden md:flex flex-col md:flex-row gap-4 text-white text-lg font-medium menu-list">
             <li><a href="index.html" class="hover:text-purple-900 transition font-bold">Home</a></li>  
             <li class="relative" id="menu-sobre">
                 <div id="btn-sobre" class="flex items-center gap-1 font-bold hover:text-purple-900 cursor-pointer select-none">
@@ -49,7 +141,7 @@
     <section id="index" class="relative bg-[url('assets/floral1.png')] bg-cover bg-center min-h-screen ">
         <div class="absolute inset-0 bg-blue-100/50"></div>
       
-        <div class="relative z-10 container mx-auto md:px-20 py-16 grid md:grid-cols-2 items-center gap-8">
+        <div class="relative z-10 container mx-auto md:px-20 py-16 grid md:grid-cols-2 items-center justify-center text-center md:text-left gap-8">
           <!-- Texto -->
           <div class="md:pr-10">
             <h1 class="text-5xl md:text-6xl xl:text-6xl font-bold leading-tight">
@@ -59,7 +151,7 @@
             <h2 class="mt-6">
               <a class="text-2xl md:text-3xl font-bold">29 a 31 de Julho • Brasília/DF</a>
             </h2>
-            <p class="mt-6 text-xl md:text-2xl max-w-md leading-relaxed">
+            <p class="mt-6 text-xl md:text-2xl  leading-relaxed">
               Experiências compartilhadas para a construção de um futuro inclusivo e inovador
             </p>
             <a href="#" class="mt-10 inline-block bg-[#673FBC] hover:bg-purple-800 text-white px-8 py-4 rounded-xl font-semibold text-lg transition">
@@ -191,9 +283,6 @@
                 <a href="https://www.udf.edu.br/">
                     <img src="assets/instituicao/udf.png" alt="UDF" class="h-22 md:h-44 object-contain" />
                 </a>
-                <a href="https://www.udf.edu.br/">
-                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-12 md:h-24 object-contain" />
-                </a>
             </div>
             <div class="flex flex-row justify-center items-center gap-24">
                 <a href="https://www.ifb.edu.br/">
@@ -207,11 +296,14 @@
                 </a>
            </div>
            <div class="flex flex-row justify-center items-center gap-24">
+                <a href="https://www.utpl.edu.ec/">
+                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-12 md:h-24 object-contain" />
+                </a>
                 <a href="https://www.up.ac.pa/">
-                    <img src="assets/instituicao/unp.png" alt="up" class="h-6 md:h-48 mt-4 object-contain" />
+                    <img src="assets/instituicao/unp.png" alt="up" class="h-22 md:h-44 mt-4 object-contain" />
                 </a> 
                 <a href="https://www.una.py/">
-                    <img src="assets/instituicao/unn.png" alt="una" class="h-6 md:h-48 mt-4 object-contain" />
+                    <img src="assets/instituicao/unn.png" alt="una" class="h-22 md:h-44 mt-4 object-contain" />
                 </a> 
 
             </div>
@@ -372,6 +464,17 @@
         submenu.addEventListener('mouseenter', openMenu);
         submenu.addEventListener('mouseleave', closeMenu);
     </script>
+
+    <!-- Menu resposivo -->
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav ul');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+        });
+    </script>
+
         
       
 </body>
