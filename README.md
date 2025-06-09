@@ -28,10 +28,10 @@ Site oficial do Fórum de Mulheres em STEM da América Latina, um evento que re�
 
 ## 📁 Acesso ao projeto
 
-Você pode acessar o repositório completo no GitHub:
-🔗 [https://github.com/aadriellyy/LAWomenSTEM] (https://github.com/aadriellyy/LAWomenSTEM)
-
-Ou visualizar o site ao vivo em:
+Você pode acessar o repositório completo no GitHub:<br>
+🔗 https://github.com/aadriellyy/LAWomenSTEM
+<br><br>
+Ou visualizar o site ao vivo em:<br>
 🌐 Em breve..
 
 ## 🛠️ Abrir e rodar o projeto
