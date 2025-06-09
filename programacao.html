@@ -126,7 +126,18 @@
           </li>          
           <li><a href="index.html#local" class="hover:text-purple-900 transition font-bold">Local</a></li>
           <li><a href="programacao.html" class="hover:text-purple-900 transition font-bold">Programação</a></li>
-          <li><a href="comissao.html" class="hover:text-purple-900 transition font-bold">Comissão</a></li>
+          <li class="relative" id="menu-comissao">
+                <div id="btn-comissao" class="flex items-center gap-1 font-bold hover:text-purple-900 cursor-pointer select-none">
+                    <a href="comissao.html">Comissão</a>
+                    <svg class="w-4 h-4 transform transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </div>
+                <ul id="submenu-comissao" class="absolute left-0 top-full mt-1 hidden flex-col bg-white text-gray-800 shadow-lg rounded-md w-60 z-50">
+                    <li><a href="comissao.html#organizadora" class="block px-4 py-2 hover:bg-gray-100">Comissão Organizadora</a></li>
+                    <li><a href="comissao.html#tecnico" class="block px-4 py-2 hover:bg-gray-100">Comissão Técnico-Científica</a></li>
+                </ul>
+            </li>         
           <li><a href="submissoes.html" class="hover:text-purple-900 transition font-bold">Submissões</a></li>
           <li><a href="#inscricao" class="hover:text-purple-900 transition font-bold">Inscrição</a></li>
           <li><a href="index.html#instituicoes" class="hover:text-purple-900 transition font-bold">Instituições Parceiras</a></li>
@@ -519,6 +530,31 @@
         btn.addEventListener('mouseleave', closeMenu);
         submenu.addEventListener('mouseenter', openMenu);
         submenu.addEventListener('mouseleave', closeMenu);
+    </script>
+
+    <!-- Submenu do comissao -->
+    <script>
+        const btncomissao = document.getElementById('btn-comissao');
+        const submenucomissao = document.getElementById('submenu-comissao');
+        let comissaotimeout;
+
+        function openMenu() {
+            clearTimeout(comissaotimeout);
+            submenucomissao.classList.remove('hidden');
+            btncomissao.querySelector('svg').classList.add('rotate-180');
+        }
+
+        function closeMenu() {
+            comissaotimeout = setTimeout(() => {
+            submenucomissao.classList.add('hidden');
+            btncomissao.querySelector('svg').classList.remove('rotate-180');
+            }, 300);
+        }
+
+        btncomissao.addEventListener('mouseenter', openMenu);
+        btncomissao.addEventListener('mouseleave', closeMenu);
+        submenucomissao.addEventListener('mouseenter', openMenu);
+        submenucomissao.addEventListener('mouseleave', closeMenu);
     </script>
 
         <!-- Menu resposivo -->
