@@ -152,20 +152,20 @@
             </div>
         
             <div class="relative w-full">
-            <!-- Carrossel -->
-            <div id="carousel-container" class="block h-80 rounded-2xl overflow-hidden shadow-lg mt-14">
-                <img id="carousel-image" src="assets/carrosel_bsb/esplanada.jpg" class="w-full h-full object-cover transition duration-500" />
-                <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
-                <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
-            </div>
+                <!-- Carrossel -->
+                <div id="carousel-container" class="block h-80 rounded-2xl overflow-hidden shadow-lg mt-14">
+                    <img id="carousel-image" src="assets/carrosel_bsb/esplanada.jpg" class="w-full h-full object-cover transition duration-500" />
+                    <button onclick="prevImage()" class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-r">‹</button>
+                    <button onclick="nextImage()" class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black bg-opacity-30 text-white px-3 py-1 rounded-l">›</button>
+                </div>
         
-            <!-- Mapa -->
-            <div id="map-container" class="hidden w-full mt-4 rounded-lg overflow-hidden shadow-md border border-purple-300">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" 
-                        width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"
-                        referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
+                <!-- Mapa -->
+                <div id="map-container" class="hidden w-full mt-4 rounded-lg overflow-hidden shadow-md border border-purple-300">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.8593208549!2d-47.87162942392899!3d-15.758579622076132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bb88f71361f%3A0x3933d293e644ad55!2zUHLDqWRpbyBkZSBDacOqbmNpYSBkYSBDb21wdXRhw6fDo28gZSBFc3RhdMOtc3RpY2EgLSBDSUMvRVNU!5e0!3m2!1spt-BR!2sbr!4v1749359698999!5m2!1spt-BR!2sbr" 
+                            width="600" height="300" style="border:0;" allowfullscreen="" loading="lazy" class="w-full"
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
             </div>
         </div>
     </section>
@@ -190,6 +190,9 @@
                 </a>
                 <a href="https://www.udf.edu.br/">
                     <img src="assets/instituicao/udf.png" alt="UDF" class="h-22 md:h-44 object-contain" />
+                </a>
+                <a href="https://www.udf.edu.br/">
+                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-12 md:h-24 object-contain" />
                 </a>
             </div>
             <div class="flex flex-row justify-center items-center gap-24">
@@ -334,7 +337,8 @@
           }
         }
     </script>
-        
+    
+    <!-- Submenu do sobre -->
     <script>
         const menu = document.getElementById('menu-sobre');
         const btn = document.getElementById('btn-sobre');
