@@ -4,4 +4,16 @@
     <loc>https://la-women-stem.vercel.app/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://la-women-stem.vercel.app/programacao.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://la-women-stem.vercel.app/comissao.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://la-women-stem.vercel.app/submissoes.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
