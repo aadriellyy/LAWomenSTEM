@@ -465,91 +465,49 @@
         const submenu = document.getElementById('submenu-sobre');
         let timeout;
     
-        // Hover (funciona em desktop)
         function openMenu() {
-            clearTimeout(timeout);
-            submenu.classList.remove('hidden');
-            btn.querySelector('svg').classList.add('rotate-180');
+        clearTimeout(timeout);
+        submenu.classList.remove('hidden');
+        btn.querySelector('svg').classList.add('rotate-180');
         }
     
         function closeMenu() {
-            timeout = setTimeout(() => {
-                submenu.classList.add('hidden');
-                btn.querySelector('svg').classList.remove('rotate-180');
-            }, 300);
+        timeout = setTimeout(() => {
+            submenu.classList.add('hidden');
+            btn.querySelector('svg').classList.remove('rotate-180');
+        }, 300); // espera 300ms antes de fechar
         }
     
-        // Hover para desktop
         btn.addEventListener('mouseenter', openMenu);
         btn.addEventListener('mouseleave', closeMenu);
         submenu.addEventListener('mouseenter', openMenu);
         submenu.addEventListener('mouseleave', closeMenu);
-    
-        // Clique para mobile
-        btn.addEventListener('click', function (e) {
-            // Impede o clique no <a> de redirecionar (exceto se for diretamente no link)
-            if (e.target.tagName !== 'A') {
-                e.preventDefault();
-            }
-            submenu.classList.toggle('hidden');
-            btn.querySelector('svg').classList.toggle('rotate-180');
-        });
-    
-        // Fecha ao clicar fora (opcional)
-        document.addEventListener('click', function (e) {
-            if (!menu.contains(e.target)) {
-                submenu.classList.add('hidden');
-                btn.querySelector('svg').classList.remove('rotate-180');
-            }
-        });
     </script>
-    
 
     <!-- Submenu do comissao -->
     <script>
         const btncomissao = document.getElementById('btn-comissao');
         const submenucomissao = document.getElementById('submenu-comissao');
         let comissaotimeout;
-    
-        // Hover (funciona em desktop)
+
         function openMenu() {
             clearTimeout(comissaotimeout);
             submenucomissao.classList.remove('hidden');
             btncomissao.querySelector('svg').classList.add('rotate-180');
         }
-    
+
         function closeMenu() {
             comissaotimeout = setTimeout(() => {
-                submenucomissao.classList.add('hidden');
-                btncomissao.querySelector('svg').classList.remove('rotate-180');
+            submenucomissao.classList.add('hidden');
+            btncomissao.querySelector('svg').classList.remove('rotate-180');
             }, 300);
         }
-    
-        // Adiciona eventos para hover (desktop)
+
         btncomissao.addEventListener('mouseenter', openMenu);
         btncomissao.addEventListener('mouseleave', closeMenu);
         submenucomissao.addEventListener('mouseenter', openMenu);
         submenucomissao.addEventListener('mouseleave', closeMenu);
-    
-        // Toggle no clique (funciona em mobile)
-        btncomissao.addEventListener('click', function (e) {
-            // Impede que o clique no <a> redirecione imediatamente
-            if (e.target.tagName !== 'A') {
-                e.preventDefault();
-            }
-            submenucomissao.classList.toggle('hidden');
-            btncomissao.querySelector('svg').classList.toggle('rotate-180');
-        });
-    
-        // Fecha ao clicar fora (opcional)
-        document.addEventListener('click', function (e) {
-            if (!document.getElementById('menu-comissao').contains(e.target)) {
-                submenucomissao.classList.add('hidden');
-                btncomissao.querySelector('svg').classList.remove('rotate-180');
-            }
-        });
     </script>
-    
 
     <!-- Menu resposivo -->
     <script>
