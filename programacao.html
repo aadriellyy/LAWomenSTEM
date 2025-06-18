@@ -158,245 +158,249 @@
           <!-- Abas -->
           <div class="flex border-b border-blue-600 mb-8 space-x-6 md:space-x-16 text-2xl font-semibold text-black">
             <button onclick="showTab('palestrantes')" id="tab-palestrantes" class="pb-2 border-b-4 border-[#673FBC] text-[#000000] hover:text-[#673FBC]">Palestrantes</button>
+            <button onclick="showTab('mentorias')" id="tab-mentorias" class="pb-2 border-b-4 border-[#673FBC] text-[#000000] hover:text-[#673FBC]">Mentorias</button>
             <button onclick="showTab('programacao')" id="tab-programacao" class="pb-2 text-[#000000] hover:text-[#673FBC]">Programação</button>
           </div>
       
-          <div id="tab-content-palestrantes" class="block w-full max-w-6xl mx-auto">
-            <p class="text-lg leading-relaxed text-center mb-6">
-              
-            </p>
-          
-            <div class="flex flex-col space-y-10">
-              <h1 style="color: #673fbc;" class="text-2xl md:text-4xl font-bold leading-tight text-center">
-                Palestrantes Internacionais
-              </h1>
-              <!-- Card 1 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/germania.jpeg" alt="Palestrante 1" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <a href="https://www.utpl.edu.ec/">
-                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                  </a> 
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Germania del Rocio Rodriguez Morales</h3>
-                  <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad Técnica Particular de Loja, Equador</h4>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Doutora em Ciência da Computação e Tecnologia para Cidades Inteligentes, Mestre em Ciência da Computação e Tecnologia pela Universidade 
-                    Politécnica de Madri, Espanha; Engenheira de Sistemas e Computação pela Universidade Técnica de Loja (UTPL), Equador, onde atua como professora
-                    pesquisadora desde 2001, além de ocupar outros cargos de gestão e representação.<br>
-                    Atualmente, é responsável pelo Observatório de Transformação Digital (OBTD) e pelo grupo de pesquisa em Arquitetura e Gestão de TI (ITAM) da UTPL, coordenadora da rede equatoriana de mulheres em TIC da 
-                    Metared International e subcoordenadora do GT7: Mulheres Latino-Americanas na Computação do CLEI. Autora de mais de 30 publicações científicas indexadas no Scopus, capítulos de livros e dissertações relacionadas às suas linhas de interesse e pesquisa: engenharia e arquitetura de software, 
-                    transformação digital de empresas, tecnologias inclusivas e tecnologias aplicadas à educação.
-                  </p>
-                </div>
-              </div>
-              
-          
-              <!-- Card 2 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                  <div class="flex flex-col items-center md:mt-24"> 
-                    <img src="assets/palestrantes/gabriela.jpeg" alt="Palestrante 2" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                    <a href="https://www.ucr.ac.cr/">
-                      <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
+          <div id="tab-content-palestrantes" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
+            <div class="flex flex-col md:flex-row gap-10 items-start w-full">
+              <div class="w-full md:w-1/2 flex flex-col space-y-10">
+                <h1 style="color: #673fbc;" class="text-2xl md:text-4xl font-bold leading-tight text-center">
+                  Palestrantes Internacionais
+                </h1>
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/palestrantes/germania.jpeg" alt="Palestrante 1" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <a href="https://www.utpl.edu.ec/">
+                      <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
                     </a> 
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Germania del Rocio Rodriguez Morales</h3>
+                    <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad Técnica Particular de Loja, Equador</h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">
+                      Doutora em Ciência da Computação e Tecnologia para Cidades Inteligentes, Mestre em Ciência da Computação e Tecnologia pela Universidade 
+                      Politécnica de Madri, Espanha; Engenheira de Sistemas e Computação pela Universidade Técnica de Loja (UTPL), Equador, onde atua como professora
+                      pesquisadora desde 2001, além de ocupar outros cargos de gestão e representação.<br>
+                      Atualmente, é responsável pelo Observatório de Transformação Digital (OBTD) e pelo grupo de pesquisa em Arquitetura e Gestão de TI (ITAM) da UTPL, coordenadora da rede equatoriana de mulheres em TIC da 
+                      Metared International e subcoordenadora do GT7: Mulheres Latino-Americanas na Computação do CLEI. Autora de mais de 30 publicações científicas indexadas no Scopus, capítulos de livros e dissertações relacionadas às suas linhas de interesse e pesquisa: engenharia e arquitetura de software, 
+                      transformação digital de empresas, tecnologias inclusivas e tecnologias aplicadas à educação.
+                    </p>
+                  </div>
                 </div>
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Gabriela Marín Raventós</h3>
-                  <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Costa Rica, Costa Rica </h4>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Bacharel e Licenciada em Ciência da Computação pela Universidade da Costa Rica (UCR), mestrado pela Case Western Reserve University e doutorado 
-                    pela Texas A&M University, nos Estados Unidos. Ela tem mais de 40 anos de experiência no ensino de ciência da computação na UCR. Foi Diretora 
-                    do Programa de Pós-Graduação em Ciência da Computação e Informática diversas vezes, Reitora do Sistema de Estudos de Pós-Graduação e Diretora 
-                    do Centro de Pesquisa em TIC (CITIC).<br>
-                    Publicou mais de 90 artigos em anais de congressos e periódicos. Organizou conferências nacionais e internacionais e foi membro e presidiu o comitê de programa de diversos eventos. Participou ativamente da organização ou do comitê de programa 
-                    da Conferência Latino-Americana de Mulheres na Computação (LAWCC) desde sua criação em 2009. Em 2012, foi eleita, e depois reeleita, Presidente 
-                    do Centro Latino-Americano de Estudos de Informática (CLEI), tornando-se a primeira mulher e a primeira centro-americana a ocupar este distinto 
-                    cargo. <br>
-                    Em 2012, recebeu o Prêmio de Mérito em Ciência da Computação - Educação e Pesquisa do Colégio Costarriquenho de Ciência da Computação e 
-                    Profissionais da Computação. De 2016 a 2022, atuou como vice-presidente da Federação Internacional para Processamento de Informação (IFIP), 
-                    responsável pelo Comitê de Equidade Digital. Em outubro de 2021, recebeu a Distinção CLEI por Mérito Latino-Americano em Ciência da Computação. 
-                    Aposentou-se em agosto de 2023 e continua como professora ad honorem na Universidade da Costa Rica (UCR).
-                  </p>
+                
+            
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                    <div class="flex flex-col items-center md:mt-24"> 
+                      <img src="assets/palestrantes/gabriela.jpeg" alt="Palestrante 2" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                      <a href="https://www.ucr.ac.cr/">
+                        <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
+                      </a> 
+                  </div>
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Gabriela Marín Raventós</h3>
+                    <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Costa Rica, Costa Rica </h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">
+                      Bacharel e Licenciada em Ciência da Computação pela Universidade da Costa Rica (UCR), mestrado pela Case Western Reserve University e doutorado 
+                      pela Texas A&M University, nos Estados Unidos. Ela tem mais de 40 anos de experiência no ensino de ciência da computação na UCR. Foi Diretora 
+                      do Programa de Pós-Graduação em Ciência da Computação e Informática diversas vezes, Reitora do Sistema de Estudos de Pós-Graduação e Diretora 
+                      do Centro de Pesquisa em TIC (CITIC).<br>
+                      Publicou mais de 90 artigos em anais de congressos e periódicos. Organizou conferências nacionais e internacionais e foi membro e presidiu o comitê de programa de diversos eventos. Participou ativamente da organização ou do comitê de programa 
+                      da Conferência Latino-Americana de Mulheres na Computação (LAWCC) desde sua criação em 2009. Em 2012, foi eleita, e depois reeleita, Presidente 
+                      do Centro Latino-Americano de Estudos de Informática (CLEI), tornando-se a primeira mulher e a primeira centro-americana a ocupar este distinto 
+                      cargo. <br>
+                      Em 2012, recebeu o Prêmio de Mérito em Ciência da Computação - Educação e Pesquisa do Colégio Costarriquenho de Ciência da Computação e 
+                      Profissionais da Computação. De 2016 a 2022, atuou como vice-presidente da Federação Internacional para Processamento de Informação (IFIP), 
+                      responsável pelo Comitê de Equidade Digital. Em outubro de 2021, recebeu a Distinção CLEI por Mérito Latino-Americano em Ciência da Computação. 
+                      Aposentou-se em agosto de 2023 e continua como professora ad honorem na Universidade da Costa Rica (UCR).
+                    </p>
+                  </div>
                 </div>
-              </div>
-          
-              <!-- Card 3 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">              
-                <div class="flex flex-col items-center md:mt-28"> 
-                  <img src="assets/palestrantes/donna.jpeg" alt="Palestrante 3" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <a href="https://www.up.ac.pa/">
-                    <img src="assets/instituicao/unp.png" alt="up" class="h-36 md:h-44 mt-4 object-contain" />
-                  </a> 
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Donna Angela Roper</h3>
-                  <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Panamá, Panamá</h4>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                      Professora em tempo integral de Ciência da Computação e Sistemas de Informação na Universidade do Panamá, onde, em seus mais de 35 anos de 
-                      atuação na instituição, ocupou diversos cargos de liderança, como diretora da Escola de Informática, diretora do Departamento de Informática, 
-                      diretora da Escola de Comércio Eletrônico e coordenadora de extensão universitária na Faculdade de Informática, Eletrônica e Comunicação.<br>
-                      Ela foi consultora da OEA, bolsista do Senacyt, bolsista do Programa Erasmus+, participou e liderou diversos estudos, como Alfabetização em Saúde 
-                      na Universidade do Panamá, Participação feminina na Ciência da Computação e motivos de retenção, Pesquisa: experiências de alunos de graduação, 
-                      entre outros. Como membro sênior do IEEE, ela ocupou vários cargos, como vice-presidente, secretária e outros cargos no conselho do grupo de
-                      afinidade Women in Engineering (WIE), presidente do Computer Chapter e membro do Conselho de Administração da Seção Panamá do IEEE, coordenadora
-                      de área na Região 9 e coordenadora de D&I do Comitê de Atividades Geográficas na Região 9, membro ativo da American Information Systems, membro 
-                      ativo do Centro Latinoamericano de Estudios en Informática, membro da Latin American Women in Computing, membro acadêmico ativo na Câmara Panamenha
-                      de Tecnologia e outras associações profissionais. <br>
-                      Seus interesses de pesquisa estão relacionados ao aumento das habilidades e do interesse de estudantes de ciência da computação, à apropriação de aplicativos orientados ao usuário, à promoção de pesquisas e à escrita de artigos em alunos 
-                      de graduação e à redução da lacuna digital em nossa população jovem, alguns deles realizados por meio de projetos sociais, como "Happy Summer: 
-                      vamos nos divertir programando". Donna é formada em engenharia de sistemas de computação pela Universidade Tecnológica do Panamá, tem mestrado 
-                      em sistemas de informação pela Universidade Católica Santa Maria la Antigua, diversas especializações pela Universidade do Panamá e atualmente 
-                      é doutoranda em Projetos de TIC.
-                  </p>
+            
+                <!-- Card 3 -->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">              
+                  <div class="flex flex-col items-center md:mt-28"> 
+                    <img src="assets/palestrantes/donna.jpeg" alt="Palestrante 3" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <a href="https://www.up.ac.pa/">
+                      <img src="assets/instituicao/unp.png" alt="up" class="h-36 md:h-44 mt-4 object-contain" />
+                    </a> 
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Donna Angela Roper</h3>
+                    <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Panamá, Panamá</h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">
+                        Professora em tempo integral de Ciência da Computação e Sistemas de Informação na Universidade do Panamá, onde, em seus mais de 35 anos de 
+                        atuação na instituição, ocupou diversos cargos de liderança, como diretora da Escola de Informática, diretora do Departamento de Informática, 
+                        diretora da Escola de Comércio Eletrônico e coordenadora de extensão universitária na Faculdade de Informática, Eletrônica e Comunicação.<br>
+                        Ela foi consultora da OEA, bolsista do Senacyt, bolsista do Programa Erasmus+, participou e liderou diversos estudos, como Alfabetização em Saúde 
+                        na Universidade do Panamá, Participação feminina na Ciência da Computação e motivos de retenção, Pesquisa: experiências de alunos de graduação, 
+                        entre outros. Como membro sênior do IEEE, ela ocupou vários cargos, como vice-presidente, secretária e outros cargos no conselho do grupo de
+                        afinidade Women in Engineering (WIE), presidente do Computer Chapter e membro do Conselho de Administração da Seção Panamá do IEEE, coordenadora
+                        de área na Região 9 e coordenadora de D&I do Comitê de Atividades Geográficas na Região 9, membro ativo da American Information Systems, membro 
+                        ativo do Centro Latinoamericano de Estudios en Informática, membro da Latin American Women in Computing, membro acadêmico ativo na Câmara Panamenha
+                        de Tecnologia e outras associações profissionais. <br>
+                        Seus interesses de pesquisa estão relacionados ao aumento das habilidades e do interesse de estudantes de ciência da computação, à apropriação de aplicativos orientados ao usuário, à promoção de pesquisas e à escrita de artigos em alunos 
+                        de graduação e à redução da lacuna digital em nossa população jovem, alguns deles realizados por meio de projetos sociais, como "Happy Summer: 
+                        vamos nos divertir programando". Donna é formada em engenharia de sistemas de computação pela Universidade Tecnológica do Panamá, tem mestrado 
+                        em sistemas de informação pela Universidade Católica Santa Maria la Antigua, diversas especializações pela Universidade do Panamá e atualmente 
+                        é doutoranda em Projetos de TIC.
+                    </p>
+                  </div>
                 </div>
-              </div>
-          
-              <!-- Card 4 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/maria.jpeg" alt="Palestrante 4" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <a href="https://www.una.py/">
-                    <img src="assets/instituicao/unn.png" alt="una" class="h-36 md:h-44 mt-4 object-contain" />
-                  </a> 
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">María Elena García-Díaz</h3>
-                  <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidade Nacional de Assunção, Paraguai</h4>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Mestre em Engenharia de Sistemas de Computação pela Universidade Nacional de Assunção (UNA), é Engenheira Civil pela mesma universidade. 
-                    É professora titular de Ciência da Computação na mesma universidade. <br>
-                    Sua pesquisa se concentra em Avaliação de Mulheres na Computação, Desempenho de Redes Móveis, Computação em Grade, Computação em Nuvem, Aprendizado de Máquina e e-Saúde. Participou de diversos projetos 
-                    internacionais, nacionais e regionais. Coordena projetos com empresas nacionais públicas e privadas no âmbito do "Cluster de Pesquisa Aplicada". <br>
-                    Orienta projetos finais de graduação e pós-graduação. É avaliadora de qualidade de programas de graduação para Acreditação nos modelos ANEAES 
-                    (Paraguai) e MERCOSUL. Atualmente, é membro do Comitê Diretor do LAWCC GT7 e atuou como membro do comitê de programa e presidente de conferências 
-                    e outros eventos acadêmicos regionais.
-                  </p>
+            
+                <!-- Card 4 -->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/palestrantes/maria.jpeg" alt="Palestrante 4" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <a href="https://www.una.py/">
+                      <img src="assets/instituicao/unn.png" alt="una" class="h-36 md:h-44 mt-4 object-contain" />
+                    </a> 
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">María Elena García-Díaz</h3>
+                    <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidade Nacional de Assunção, Paraguai</h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">
+                      Mestre em Engenharia de Sistemas de Computação pela Universidade Nacional de Assunção (UNA), é Engenheira Civil pela mesma universidade. 
+                      É professora titular de Ciência da Computação na mesma universidade. <br>
+                      Sua pesquisa se concentra em Avaliação de Mulheres na Computação, Desempenho de Redes Móveis, Computação em Grade, Computação em Nuvem, Aprendizado de Máquina e e-Saúde. Participou de diversos projetos 
+                      internacionais, nacionais e regionais. Coordena projetos com empresas nacionais públicas e privadas no âmbito do "Cluster de Pesquisa Aplicada". <br>
+                      Orienta projetos finais de graduação e pós-graduação. É avaliadora de qualidade de programas de graduação para Acreditação nos modelos ANEAES 
+                      (Paraguai) e MERCOSUL. Atualmente, é membro do Comitê Diretor do LAWCC GT7 e atuou como membro do comitê de programa e presidente de conferências 
+                      e outros eventos acadêmicos regionais.
+                    </p>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Card 5 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/andrea.png" alt="Palestrante 4" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <a href="https://udelar.edu.uy/portal/">
-                    <img src="assets/instituicao/unu.png" alt="una" class="h-14 md:h-20 mt-4 object-contain" />
-                  </a> 
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Andrea Delgado</h3>
-                  <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad de la República de Uruguay, Uruguai</h4>
-                  <p class="text-sm md:text-base leading-relaxed text-justify"> 
-                    
-                  </p>
+                <!-- Card 5 -->
+                <!-- <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/palestrantes/andrea.png" alt="Palestrante 4" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <a href="https://udelar.edu.uy/portal/">
+                      <img src="assets/instituicao/unu.png" alt="una" class="h-14 md:h-20 mt-4 object-contain" />
+                    </a> 
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Andrea Delgado</h3>
+                    <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad de la República de Uruguay, Uruguai</h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify"> 
+                      
+                    </p>
+                  </div>
+                </div> -->
+
+                <!-- Card 6-->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/palestrantes/marisol.jpg" alt="Palestrante 4" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <a href="https://www.unam.mx/">
+                      <img src="assets/instituicao/unam.png" alt="una" class="h-28 md:h-44 mt-4 object-contain" />
+                    </a> 
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Marisol Flores Garrido</h3>
+                    <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad Nacional Autónoma de México, México  </h4>
+                    <p class="text-sm md:text-base leading-relaxed text-justify"> 
+                      Marisol Flores Garrido é professora em tempo integral na Universidade Nacional Autônoma do México, campus de Morelia. 
+                      Estudou matemática aplicada na Universidade Autônoma de Coahuila. Posteriormente, obteve mestrado em computação científica pela Universidade 
+                      da Colúmbia Britânica (BC, Canadá) e doutorado em ciências computacionais pelo Instituto Nacional de Astrofísica, Óptica e Eletrônica (Puebla, México). 
+                      Foi bolsista da UNAM, CONACYT, Universidade do Chile e Universidade Estadual de San Diego, e foi vencedora do prêmio Women in AI North America 2023 
+                      por suas atividades de pesquisa. É membro do Sistema Nacional de Pesquisadores (SNII). Sua pesquisa se concentra em reconhecimento de padrões, 
+                      aprendizado de máquina e análise de redes. Também se interessa pela interseção entre inteligência artificial e humanidades, particularmente nas 
+                      dimensões social e política dos algoritmos.
+                    </p>
+                  </div>
                 </div>
               </div>
+                
+                <div class="w-full md:w-1/2 flex flex-col space-y-10"> 
+                  <h1 style="color: #673fbc;" class="text-2xl md:text-4xl font-bold leading-tight text-center">
+                    Palestrantes Nacionais
+                  </h1>
+                  <!-- Card 1 -->
+                  <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                    <div class="flex flex-col items-center"> 
+                      <img src="assets/palestrantes/regilenejpeg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                      <!-- <a href="https://www.utpl.edu.ec/">
+                        <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
+                      </a>  -->
+                    </div> 
+                    <div class="flex-1 text-center md:text-left">
+                      <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Regilene Siqueira Rozal</h3>
+                      <p class="text-sm md:text-base leading-relaxed text-justify">
+                        Delegada de polícia do Distrito Federal, com atuação nas delegacias especializadas de repressão aos crimes cibernéticos e e de atendimento à mulher (DEAM). 
+                        Ex-Analista Judiciário do TJGO; especialista em Segurança, Desenvolvimento e Defesa (CAED-MD), em Direito Processual Constitucional, e em Direito do Trabalho 
+                        e Processual do Trabalho. Atualmente, ocupa o cargo de Subsecretária de Prevenção à Criminalidade da SSP-DF, integrando diversos colegiados distritais voltados 
+                        à discussão de políticas públicas de proteção e enfrentamento à violência contra mulheres.
+                      </p>
+                    </div>
+                  </div>
 
-              <!-- Card 6-->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/marisol.jpg" alt="Palestrante 4" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <a href="https://www.unam.mx/">
-                    <img src="assets/instituicao/unam.png" alt="una" class="h-28 md:h-44 mt-4 object-contain" />
-                  </a> 
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Marisol Flores Garrido</h3>
-                  <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad Nacional Autónoma de México, México  </h4>
-                  <p class="text-sm md:text-base leading-relaxed text-justify"> 
-                    Marisol Flores Garrido é professora em tempo integral na Universidade Nacional Autônoma do México, campus de Morelia. 
-                    Estudou matemática aplicada na Universidade Autônoma de Coahuila. Posteriormente, obteve mestrado em computação científica pela Universidade 
-                    da Colúmbia Britânica (BC, Canadá) e doutorado em ciências computacionais pelo Instituto Nacional de Astrofísica, Óptica e Eletrônica (Puebla, México). 
-                    Foi bolsista da UNAM, CONACYT, Universidade do Chile e Universidade Estadual de San Diego, e foi vencedora do prêmio Women in AI North America 2023 
-                    por suas atividades de pesquisa. É membro do Sistema Nacional de Pesquisadores (SNII). Sua pesquisa se concentra em reconhecimento de padrões, 
-                    aprendizado de máquina e análise de redes. Também se interessa pela interseção entre inteligência artificial e humanidades, particularmente nas 
-                    dimensões social e política dos algoritmos.
-                  </p>
+                  <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                    <div class="flex flex-col items-center"> 
+                      <img src="assets/palestrantes/tachira.jpeg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                      <!-- <a href="https://www.utpl.edu.ec/">
+                        <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
+                      </a>  -->
+                    </div> 
+                    <div class="flex-1 text-center md:text-left">
+                      <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Thaciana Cerqueira</h3>
+                      <p class="text-sm md:text-base leading-relaxed text-justify">
+                        Doutora em Inteligência Artificia e servidora pública no cargo de Analista de Tecnologia da Informação. Atualmente, Coordenadora-Geral de Adoção de Inteligência Artificial
+                        na Diretoria de Infraestrutura de Dados pela Secretaria de Governo Digital do Ministério da Gestão e Inovação de Serviços Públicos e do Núcleo de IA constante do Plano Brasileiro
+                        de IA do governo. Com uma sólida experiência na implementação de projetos inovadores, lidero iniciativas que visam otimizar processos e promover a transformação digital no setor público.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <h1 style="color: #673fbc;" class="text-2xl mt-20 md:text-4xl font-bold leading-tight text-center">
-                Palestrantes Nacionais
-              </h1>
-              <!-- Card 1 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/regilenejpeg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <!-- <a href="https://www.utpl.edu.ec/">
-                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                  </a>  -->
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Regilene Siqueira Rozal</h3>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Delegada de polícia do Distrito Federal, com atuação nas delegacias especializadas de repressão aos crimes cibernéticos e e de atendimento à mulher (DEAM). 
-                    Ex-Analista Judiciário do TJGO; especialista em Segurança, Desenvolvimento e Defesa (CAED-MD), em Direito Processual Constitucional, e em Direito do Trabalho 
-                    e Processual do Trabalho. Atualmente, ocupa o cargo de Subsecretária de Prevenção à Criminalidade da SSP-DF, integrando diversos colegiados distritais voltados 
-                    à discussão de políticas públicas de proteção e enfrentamento à violência contra mulheres.
-                  </p>
-                </div>
-              </div>
-
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/tachira.jpeg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <!-- <a href="https://www.utpl.edu.ec/">
-                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                  </a>  -->
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Thaciana Cerqueira</h3>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Doutora em Inteligência Artificia e servidora pública no cargo de Analista de Tecnologia da Informação. Atualmente, Coordenadora-Geral de Adoção de Inteligência Artificial
-                     na Diretoria de Infraestrutura de Dados pela Secretaria de Governo Digital do Ministério da Gestão e Inovação de Serviços Públicos e do Núcleo de IA constante do Plano Brasileiro
-                      de IA do governo. Com uma sólida experiência na implementação de projetos inovadores, lidero iniciativas que visam otimizar processos e promover a transformação digital no setor público.
-                  </p>
-                </div>
-              </div>
-
-              <h1 style="color: #673fbc;" class="text-2xl mt-20 md:text-4xl font-bold leading-tight text-center">
-                Mentorias
-              </h1>
-              <!-- Card 1 -->
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/mentoras/lorena.jpg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <!-- <a href="https://www.utpl.edu.ec/">
-                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                  </a>  -->
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Lorena Borges</h3>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Possui mestrado em Segurança Cibernética e graduação em Engenharia de Redes de Comunicação pela Universidade de Brasília (UnB). Atua nas áreas de implantação, 
-                    gerenciamento e segurança de redes de computadores há 18 anos. Atualmente é Analista de Infraestrutura de TI no Supremo Tribunal Federal - STF, professora substituta 
-                    na UnB/CIC, além de docente na Faculdade IDP e Escola Superior de Redes - RNP/RJ.
-                  </p>
-                </div>
-              </div>
-
-              <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
-                <div class="flex flex-col items-center"> 
-                  <img src="assets/palestrantes/mentoras/raquel.jpg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                  <!-- <a href="https://www.utpl.edu.ec/">
-                    <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                  </a>  -->
-                </div> 
-                <div class="flex-1 text-center md:text-left">
-                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Raquel S B Fontes</h3>
-                  <p class="text-sm md:text-base leading-relaxed text-justify">
-                    Funcionária na Diretoria de Tecnologia no Banco do Brasil. ​É formada pela FGV em Executive MBA em Big Data & ​Business Analytics. A partir de 2011, mergulhou no universo ​dos dados, 
-                    atuando em projetar bancos de dados ​logicamente e fisicamente até explorar todas as faces do ​cubo. Com a evolução da maneira como lidamos com os ​dados e a alta volumetria com os 
-                    quais sempre trabalhou, ​posicionou-se em analytics, extraindo insights para ​impulsionar decisões estratégicas. Também atua como ​educadora corporativa, compartilhando conhecimento 
-                    por ​meio de vários cursos que ministra e é mãe de dois ​meninos, mostrando que é possível equilibrar vida ​profissional e pessoal. Além de atuar no time “Predictors” ​dedica também 
-                    seu tempo ao trabalho voluntário, incentivando e apoiando mais ​mulheres na área de tecnologia.
-                  </p>
-                </div>
-              </div>
-
             </div> 
           </div>
-      
+
+          <!-- MENTORIAS  -->
+          <div id="tab-content-mentoria" class="hidden w-full max-w-6xl mx-auto">        
+            <div class="flex flex-col space-y-10">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/palestrantes/mentoras/lorena.jpg" alt="Mentoria 1" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <!-- <a href="https://www.utpl.edu.ec/">
+                      <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
+                    </a>  -->
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Lorena Borges</h3>
+                    <!-- <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad Técnica Particular de Loja, Equador</h4> -->
+                    <p class="text-sm md:text-base leading-relaxed text-justify">Possui mestrado em Segurança Cibernética e graduação em Engenharia de Redes de Comunicação pela Universidade de Brasília (UnB). Atua nas áreas de implantação, 
+                      gerenciamento e segurança de redes de computadores há 18 anos. Atualmente é Analista de Infraestrutura de TI no Supremo Tribunal Federal - STF, professora substituta 
+                      na UnB/CIC, além de docente na Faculdade IDP e Escola Superior de Redes - RNP/RJ.
+                     </p>
+                  </div>
+                </div>
+                
+            
+                <!-- Card 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                    <div class="flex flex-col items-center md:mt-auto"> 
+                      <img src="assets/palestrantes/mentoras/raquel.jpg" alt="Mentoria 2" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                      <!-- <a href="https://www.ucr.ac.cr/">
+                        <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
+                      </a>  -->
+                  </div>
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Raquel S B Fontes</h3>
+                    <!-- <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Costa Rica, Costa Rica </h4> -->
+                    <p class="text-sm md:text-base leading-relaxed text-justify"> Funcionária na Diretoria de Tecnologia no Banco do Brasil. ​É formada pela FGV em Executive MBA em Big Data & ​Business Analytics. A partir de 2011, mergulhou no universo ​dos dados, 
+                      atuando em projetar bancos de dados ​logicamente e fisicamente até explorar todas as faces do ​cubo. Com a evolução da maneira como lidamos com os ​dados e a alta volumetria com os 
+                      quais sempre trabalhou, ​posicionou-se em analytics, extraindo insights para ​impulsionar decisões estratégicas. Também atua como ​educadora corporativa, compartilhando conhecimento 
+                      por ​meio de vários cursos que ministra e é mãe de dois ​meninos, mostrando que é possível equilibrar vida ​profissional e pessoal. Além de atuar no time “Predictors” ​dedica também 
+                      seu tempo ao trabalho voluntário, incentivando e apoiando mais ​mulheres na área de tecnologia.
+                     </p>
+                  </div>
+                </div>
+              </div> 
+          </div>
+
           <!-- PROGRAMAÇÃO -->
             <div id="tab-content-programacao" class="hidden w-full mt-8 px-4 justify-center">
               <p class="text-3xl text-center mb-6 font-semibold">Confira a programação completa do evento:</p>
@@ -582,33 +586,42 @@
       <!-- Mudança nas tabs do local -->
       <script>
         function showTab(tab) {
-          const cidadeBtn = document.getElementById("tab-palestrantes");
-          const localBtn = document.getElementById("tab-programacao");
+          const palestranteBtn = document.getElementById("tab-palestrantes");
+          const programacaobtn = document.getElementById("tab-programacao");
+          const mentbtn = document.getElementById("tab-mentorias");
       
-          const cidadeContent = document.getElementById("tab-content-palestrantes");
-          const localContent = document.getElementById("tab-content-programacao");
       
-                
-          const carousel = document.getElementById("fotos-container");
-      
+          const palestranteContent = document.getElementById("tab-content-palestrantes");
+          const programacaoContent = document.getElementById("tab-content-programacao");
+          const mentContent = document.getElementById("tab-content-mentoria");
+            
           if (tab === "palestrantes") {
-            cidadeBtn.classList.add("border-b-4", "border-[#673FBC]");
-            localBtn.classList.remove("border-b-4", "border-[#673FBC]");
+            palestranteBtn.classList.add("border-b-4", "border-[#673FBC]");
+            programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
+            mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
       
-            cidadeContent.classList.remove("hidden");
-            localContent.classList.add("hidden");
+            palestranteContent.classList.remove("hidden");
+            programacaoContent.classList.add("hidden");
+            mentContent.classList.add("hidden");
       
-            carousel.classList.remove("hidden");
-            map.classList.add("hidden");
-          } else {
-            cidadeBtn.classList.remove("border-b-4", "border-[#673FBC]");
-            localBtn.classList.add("border-b-4", "border-[#673FBC]");
+          } else if(tab === "mentorias") {
+            palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
+            programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
+            mentbtn.classList.add("border-b-4", "border-[#673FBC]");
       
-            cidadeContent.classList.add("hidden");
-            localContent.classList.remove("hidden");
+            palestranteContent.classList.add("hidden");
+            programacaoContent.classList.add("hidden");
+            mentContent.classList.remove("hidden");
       
-            carousel.classList.add("hidden");
-            map.classList.remove("hidden");
+          } else if(tab === "programacao") {
+            palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
+            programacaobtn.classList.add("border-b-4", "border-[#673FBC]");
+            mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
+      
+            palestranteContent.classList.add("hidden");
+            programacaoContent.classList.remove("hidden");
+            mentContent.classList.add("hidden");
+
           }
         }
   </script>
