@@ -156,11 +156,35 @@
     <section id="programacao2" class="relative bg-cover bg-center md:px-20 py-10">
         <div class="flex flex-col items-center text-black">
           <!-- Abas -->
-          <div class="flex border-b border-blue-600 mb-8 space-x-6 md:space-x-16 text-2xl font-semibold text-black">
-            <button onclick="showTab('programacao')" id="tab-programacao" class="pb-2 text-[#000000] hover:text-[#673FBC]">Programação</button>
-            <button onclick="showTab('palestrantes')" id="tab-palestrantes" class="pb-2 border-b-4 border-[#673FBC] text-[#000000] hover:text-[#673FBC]">Palestrantes</button>
-            <button onclick="showTab('projetos')" id="tab-projetos" class="pb-2 text-[#000000] hover:text-[#673FBC]">Projetos</button>
-            <button onclick="showTab('mentorias')" id="tab-mentorias" class="pb-2 border-b-4 border-[#673FBC] text-[#000000] hover:text-[#673FBC]">Mentorias</button>
+          <div class="flex flex-wrap border-b border-blue-600 mb-8 gap-2 md:gap-6 lg:gap-16 text-base sm:text-lg md:text-xl lg:text-2xl font-semibold text-black overflow-x-auto">
+            <button 
+              onclick="showTab('programacao')" 
+              id="tab-programacao" 
+              class="pb-2 px-2 sm:px-0 whitespace-nowrap text-[#000000] hover:text-[#673FBC] transition-colors"
+            >
+              Programação
+            </button>
+            <button 
+              onclick="showTab('palestrantes')" 
+              id="tab-palestrantes" 
+              class="pb-2 px-2 sm:px-0 whitespace-nowrap border-b-4 border-[#673FBC] text-[#000000] hover:text-[#673FBC] transition-colors"
+            >
+              Palestrantes
+            </button>
+            <button 
+              onclick="showTab('projetos')" 
+              id="tab-projetos" 
+              class="pb-2 px-2 sm:px-0 whitespace-nowrap text-[#000000] hover:text-[#673FBC] transition-colors"
+            >
+              Projetos
+            </button>
+            <button 
+              onclick="showTab('mentorias')" 
+              id="tab-mentorias" 
+              class="pb-2 px-2 sm:px-0 whitespace-nowrap text-[#000000] hover:text-[#673FBC] transition-colors"
+            >
+              Mentorias
+            </button>
           </div>
       
           <div id="tab-content-palestrantes" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
@@ -506,6 +530,26 @@
                     </a>
                   </div>
                 </div>
+
+                <!-- Card 3 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center md:mt-auto"> 
+                    <img src="assets/projetos/Logo Eureka Colorido.jpg" alt="M2ICE" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                    <!-- <a href="https://www.ucr.ac.cr/">
+                      <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
+                    </a>  -->
+                </div>
+                <div class="flex-1 text-center md:text-left">
+                  <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Projeto Eureka</h3>
+                  <p class="text-sm md:text-base leading-relaxed text-justify"> O projeto Eureka: Meninas na Física tem como objetivo principal estimular a participação de 
+                    meninas da graduação, do ensino médio e do ensino fundamental, especialmente em regiões periféricas do Distrito Federal, por meio de atividades científicas. 
+                    São promovidas oficinas práticas, experimentações e vivências na Universidade, que relacionam ciência com questões do cotidiano e proporcionam experiências inspiradoras.
+                   </p>
+                   <a href="https://www.instagram.com/meninasnafisica_unb?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="mt-5 inline-block bg-purple-600 hover:bg-purple-500 text-white px-4 py-2 rounded-xl font-semibold text-lg transition">
+                    Conheça mais sobre o projeto
+                  </a>
+                </div>
+              </div>
               </div> 
           </div>
 
@@ -622,29 +666,29 @@
                       </td>
                       <td class="px-4 py-3 border border-gray-400">Profa. Maristela Holanda</td></tr>
                       <tr class="bg-green-200"><td class="px-4 py-3 border">10h - 10h30</td><td class="px-4 py-3 border">Coffee-break</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Workshops hands-on IA</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Workshops hands-on Segurança cibernética</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Workshops Robótica</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
-                      <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Hackathon<br>(Violência Cibernética contra Meninas no Ambiente Escolar)</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
+                      <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Hackathon<br>(Violência Cibernética Contra as Estudantes nas Escolas)</td>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr class="bg-green-200"><td class="px-4 py-3 border">12h - 13h30</td><td class="px-4 py-3 border">Almoço</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Workshops hands-on IA</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Workshops Segurança cibernética</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Workshops Robótica</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
-                      <tr><td class="px-4 py-3 border">13h30 - 15h45</td><td class="px-4 py-3 border">Hackathon<br>(Violência Cibernética contra Meninas no Ambiente Escolar)</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
+                      <tr><td class="px-4 py-3 border">13h30 - 15h45</td><td class="px-4 py-3 border">Hackathon<br>(Violência Cibernética Contra as Estudantes nas Escolas)</td>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">15h45 - 16h20</td><td class="px-4 py-3 border">Pitches - Hackathon</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                       <tr><td class="px-4 py-3 border">16h20 - 16h30</td><td class="px-4 py-3 border">Premiação Hackathon</td>
-                        <td class="px-4 py-3 border border-gray-400"></td></tr></tr>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                     </tbody>
                   </table>
                 </div>
@@ -657,15 +701,27 @@
                       <tr>
                         <th class="px-4 py-3 border border-gray-400">Horário</th>
                         <th class="px-4 py-3 border border-gray-400">Atividade</th>
+                        <th class="px-4 py-3 border border-gray-400">Palestrante</th>
                       </tr>
                     </thead>
                     <tbody class="bg-white">
-                      <tr class="bg-green-200"><td class="px-4 py-3 border">10h - 10h30</td><td class="px-4 py-3 border">Coffee-break</td></tr>
-                      <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Mentorias e Rodas de conversa</td></tr>
-                      <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Apresentação de startups e empresas incubadas</td></tr>
-                      <tr class="bg-green-200"><td class="px-4 py-3 border">12h - 13h30</td><td class="px-4 py-3 border">Almoço</td></tr>
-                      <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Mentorias e Rodas de conversa</td></tr>
-                      <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Apresentação de startups e empresas incubadas</td></tr>
+                      <tr><td class="px-4 py-3 border">09h00 - 10h</td><td class="px-4 py-3 border">Meninas.comp: 15 anos incluindo meninas e mulheres na Computação e Engenharia.                                                                               
+                      </td>
+                      <td class="px-4 py-3 border border-gray-400">Profa. Maristela Holanda</td></tr>
+                      <tr class="bg-green-200"><td class="px-4 py-3 border">10h - 10h30</td><td class="px-4 py-3 border">Coffee-break</td>
+                        <td class="px-4 py-3 border border-gray-400"></td></tr>
+                      <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Mentorias e Rodas de conversa</td>
+                        <td class="px-4 py-3 border border-gray-400"></td></tr>
+                      <tr><td class="px-4 py-3 border">10h30 - 12h</td><td class="px-4 py-3 border">Apresentação de startups e empresas incubadas</td>
+                        <td class="px-4 py-3 border border-gray-400"></td>/tr>
+                      <tr class="bg-green-200"><td class="px-4 py-3 border">12h - 13h30</td><td class="px-4 py-3 border">Almoço</td>
+                        <td class="px-4 py-3 border border-gray-400"></td></tr>
+                      <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Mentorias e Rodas de conversa</td>
+                        <td class="px-4 py-3 border border-gray-400"></td></tr>
+                      <tr><td class="px-4 py-3 border">13h30 - 16h30</td><td class="px-4 py-3 border">Apresentação de startups e empresas incubadas</td>
+                        <td class="px-4 py-3 border border-gray-400"></td></tr>
+                      <tr><td class="px-4 py-3 border">16h30 - 18h00</td><td class="px-4 py-3 border">Empresárias e Gestoras Públicas do DF</td>
+                        <td class="px-4 py-3 border border-gray-400"></td>
                     </tbody>
                   </table>
                 </div>
@@ -808,7 +864,7 @@
             programacaoContent.classList.remove("hidden");
             mentContent.classList.add("hidden");
             projetosContent.classList.add("hidden");
-          } else if(tab == "projetos"){
+          } else if(tab === "projetos"){
             palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
             programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
             mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
