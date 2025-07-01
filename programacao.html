@@ -829,124 +829,116 @@
       </footer>
 
       <!-- Mudança nas tabs do local -->
-      <script>
-        function showTab(tab) {
-          const palestranteBtn = document.getElementById("tab-palestrantes");
-          const programacaobtn = document.getElementById("tab-programacao");
-          const mentbtn = document.getElementById("tab-mentorias");
-          const projetosbtn = document.getElementById("tab-projetos");
+       <script>
+      function showTab(tab) {
+        const palestranteBtn = document.getElementById("tab-palestrantes");
+        const programacaobtn = document.getElementById("tab-programacao");
+        const mentbtn = document.getElementById("tab-mentorias");
+        const projetosbtn = document.getElementById("tab-projetos");
       
+        const palestranteContent = document.getElementById("tab-content-palestrantes");
+        const programacaoContent = document.getElementById("tab-content-programacao");
+        const mentContent = document.getElementById("tab-content-mentoria");
+        const projetosContent = document.getElementById("tab-content-projetos");
       
-          const palestranteContent = document.getElementById("tab-content-palestrantes");
-          const programacaoContent = document.getElementById("tab-content-programacao");
-          const mentContent = document.getElementById("tab-content-mentoria");
-          const projetosContent = document.getElementById("tab-content-projetos");
-            
-          if (tab === "palestrantes") {
-            palestranteBtn.classList.add("border-b-4", "border-[#673FBC]");
-            programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
-            mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
-            projetosbtn.classList.remove("border-b-4", "border-[#673FBC]");
+        // Primeiro, resetar todos os estados
+        palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
+        programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
+        mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
+        projetosbtn.classList.remove("border-b-4", "border-[#673FBC]");
+        
+        palestranteContent.classList.add("hidden");
+        programacaoContent.classList.add("hidden");
+        mentContent.classList.add("hidden");
+        projetosContent.classList.add("hidden");
       
-            palestranteContent.classList.remove("hidden");
-            programacaoContent.classList.add("hidden");
-            mentContent.classList.add("hidden");
-            projetosContent.classList.add("hidden");
-      
-          } else if(tab === "mentorias") {
-            palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
-            programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
-            mentbtn.classList.add("border-b-4", "border-[#673FBC]");
-            projetosbtn.classList.remove("border-b-4", "border-[#673FBC]");
-      
-            palestranteContent.classList.add("hidden");
-            programacaoContent.classList.add("hidden");
-            projetosContent.classList.add("hidden");
-            mentContent.classList.remove("hidden");
-      
-          } else if(tab === "programacao") {
-            palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
-            programacaobtn.classList.add("border-b-4", "border-[#673FBC]");
-            mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
-            projetosbtn.classList.remove("border-b-4", "border-[#673FBC]");
-      
-            palestranteContent.classList.add("hidden");
-            programacaoContent.classList.remove("hidden");
-            mentContent.classList.add("hidden");
-            projetosContent.classList.add("hidden");
-          } else if(tab === "projetos"){
-            palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
-            programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
-            mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
-            projetosbtn.classList.add("border-b-4", "border-[#673FBC]");
-      
-            palestranteContent.classList.add("hidden");
-            programacaoContent.classList.add("hidden");
-            mentContent.classList.add("hidden");
-            projetosContent.classList.remove("hidden");
-          }
+        // Depois, ativar a tab selecionada (ou programacao como padrão)
+        const selectedTab = tab || "programacao"; // Se tab for undefined, usa "programacao"
+        
+        if (selectedTab === "palestrantes") {
+          palestranteBtn.classList.add("border-b-4", "border-[#673FBC]");
+          palestranteContent.classList.remove("hidden");
+        } 
+        else if (selectedTab === "mentorias") {
+          mentbtn.classList.add("border-b-4", "border-[#673FBC]");
+          mentContent.classList.remove("hidden");
+        } 
+        else if (selectedTab === "projetos") {
+          projetosbtn.classList.add("border-b-4", "border-[#673FBC]");
+          projetosContent.classList.remove("hidden");
+        } 
+        else {
+          // Padrão: programacao
+          programacaobtn.classList.add("border-b-4", "border-[#673FBC]");
+          programacaoContent.classList.remove("hidden");
         }
-  </script>
+      }
 
-      <!-- Submenu do sobre -->
-      <script>
-        const menu = document.getElementById('menu-sobre');
-        const btn = document.getElementById('btn-sobre');
-        const submenu = document.getElementById('submenu-sobre');
-        let timeout;
+      // Mostra a tab de programação quando a página carrega
+      document.addEventListener('DOMContentLoaded', function() {
+        showTab('programacao');
+      });
+    </script>
+  <script>
+    // Função genérica para gerenciar submenus
+    function setupSubmenu(btnId, submenuId) {
+      const btn = document.getElementById(btnId);
+      const submenu = document.getElementById(submenuId);
+      let timeout;
     
-        function openMenu() {
+      if (!btn || !submenu) return;
+    
+      const openMenu = () => {
         clearTimeout(timeout);
         submenu.classList.remove('hidden');
-        btn.querySelector('svg').classList.add('rotate-180');
-        }
+        const icon = btn.querySelector('svg');
+        if (icon) icon.classList.add('rotate-180');
+      };
     
-        function closeMenu() {
+      const closeMenu = () => {
         timeout = setTimeout(() => {
-            submenu.classList.add('hidden');
-            btn.querySelector('svg').classList.remove('rotate-180');
-        }, 300); // espera 300ms antes de fechar
-        }
+          submenu.classList.add('hidden');
+          const icon = btn.querySelector('svg');
+          if (icon) icon.classList.remove('rotate-180');
+        }, 300);
+      };
     
-        btn.addEventListener('mouseenter', openMenu);
-        btn.addEventListener('mouseleave', closeMenu);
-        submenu.addEventListener('mouseenter', openMenu);
-        submenu.addEventListener('mouseleave', closeMenu);
-    </script>
-
-    <!-- Submenu do comissao -->
-    <script>
-        const btncomissao = document.getElementById('btn-comissao');
-        const submenucomissao = document.getElementById('submenu-comissao');
-        let comissaotimeout;
-
-        function openMenu() {
-            clearTimeout(comissaotimeout);
-            submenucomissao.classList.remove('hidden');
-            btncomissao.querySelector('svg').classList.add('rotate-180');
+      // Eventos para desktop
+      btn.addEventListener('mouseenter', openMenu);
+      btn.addEventListener('mouseleave', closeMenu);
+      submenu.addEventListener('mouseenter', openMenu);
+      submenu.addEventListener('mouseleave', closeMenu);
+    
+      // Eventos para mobile (touch)
+      btn.addEventListener('click', (e) => {
+        if (window.innerWidth < 768) { // Verifica se é mobile
+          e.preventDefault();
+          const isHidden = submenu.classList.contains('hidden');
+          if (isHidden) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
         }
-
-        function closeMenu() {
-            comissaotimeout = setTimeout(() => {
-            submenucomissao.classList.add('hidden');
-            btncomissao.querySelector('svg').classList.remove('rotate-180');
-            }, 300);
-        }
-
-        btncomissao.addEventListener('mouseenter', openMenu);
-        btncomissao.addEventListener('mouseleave', closeMenu);
-        submenucomissao.addEventListener('mouseenter', openMenu);
-        submenucomissao.addEventListener('mouseleave', closeMenu);
-    </script>
-
-        <!-- Menu resposivo -->
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navList = document.querySelector('nav ul');
-
+      });
+    }
+    
+    // Configura todos os submenus
+    document.addEventListener('DOMContentLoaded', () => {
+      // Configura cada submenu
+      setupSubmenu('btn-sobre', 'submenu-sobre');
+      setupSubmenu('btn-comissao', 'submenu-comissao');
+    
+      // Menu responsivo mobile
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navList = document.querySelector('nav ul');
+    
+      if (menuToggle && navList) {
         menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('show');
+          navList.classList.toggle('show');
         });
+      }
+    });
     </script>
 
 </body>

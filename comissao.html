@@ -574,67 +574,67 @@
         </div>
       </footer>
 
-    <!-- Submenu do sobre -->
       <script>
-        const menu = document.getElementById('menu-sobre');
-        const btn = document.getElementById('btn-sobre');
-        const submenu = document.getElementById('submenu-sobre');
-        let timeout;
-    
-        function openMenu() {
-        clearTimeout(timeout);
-        submenu.classList.remove('hidden');
-        btn.querySelector('svg').classList.add('rotate-180');
-        }
-    
-        function closeMenu() {
-        timeout = setTimeout(() => {
-            submenu.classList.add('hidden');
-            btn.querySelector('svg').classList.remove('rotate-180');
-        }, 300); // espera 300ms antes de fechar
-        }
-    
-        btn.addEventListener('mouseenter', openMenu);
-        btn.addEventListener('mouseleave', closeMenu);
-        submenu.addEventListener('mouseenter', openMenu);
-        submenu.addEventListener('mouseleave', closeMenu);
-    </script>
-
-    <!-- Submenu do comissao -->
-    <script>
-        const btncomissao = document.getElementById('btn-comissao');
-        const submenucomissao = document.getElementById('submenu-comissao');
-        let comissaotimeout;
-
-        function openMenu() {
-            clearTimeout(comissaotimeout);
-            submenucomissao.classList.remove('hidden');
-            btncomissao.querySelector('svg').classList.add('rotate-180');
-        }
-
-        function closeMenu() {
-            comissaotimeout = setTimeout(() => {
-            submenucomissao.classList.add('hidden');
-            btncomissao.querySelector('svg').classList.remove('rotate-180');
+        // Função genérica para gerenciar submenus
+        function setupSubmenu(btnId, submenuId) {
+          const btn = document.getElementById(btnId);
+          const submenu = document.getElementById(submenuId);
+          let timeout;
+        
+          if (!btn || !submenu) return;
+        
+          const openMenu = () => {
+            clearTimeout(timeout);
+            submenu.classList.remove('hidden');
+            const icon = btn.querySelector('svg');
+            if (icon) icon.classList.add('rotate-180');
+          };
+        
+          const closeMenu = () => {
+            timeout = setTimeout(() => {
+              submenu.classList.add('hidden');
+              const icon = btn.querySelector('svg');
+              if (icon) icon.classList.remove('rotate-180');
             }, 300);
+          };
+        
+          // Eventos para desktop
+          btn.addEventListener('mouseenter', openMenu);
+          btn.addEventListener('mouseleave', closeMenu);
+          submenu.addEventListener('mouseenter', openMenu);
+          submenu.addEventListener('mouseleave', closeMenu);
+        
+          // Eventos para mobile (touch)
+          btn.addEventListener('click', (e) => {
+            if (window.innerWidth < 768) { // Verifica se é mobile
+              e.preventDefault();
+              const isHidden = submenu.classList.contains('hidden');
+              if (isHidden) {
+                openMenu();
+              } else {
+                closeMenu();
+              }
+            }
+          });
         }
-
-        btncomissao.addEventListener('mouseenter', openMenu);
-        btncomissao.addEventListener('mouseleave', closeMenu);
-        submenucomissao.addEventListener('mouseenter', openMenu);
-        submenucomissao.addEventListener('mouseleave', closeMenu);
-    </script>
-
-
-    <!-- Menu resposivo -->
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navList = document.querySelector('nav ul');
-
-        menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('show');
+        
+        // Configura todos os submenus
+        document.addEventListener('DOMContentLoaded', () => {
+          // Configura cada submenu
+          setupSubmenu('btn-sobre', 'submenu-sobre');
+          setupSubmenu('btn-comissao', 'submenu-comissao');
+        
+          // Menu responsivo mobile
+          const menuToggle = document.querySelector('.menu-toggle');
+          const navList = document.querySelector('nav ul');
+        
+          if (menuToggle && navList) {
+            menuToggle.addEventListener('click', () => {
+              navList.classList.toggle('show');
+            });
+          }
         });
-    </script>
+        </script>
 </body>
 
 </html>

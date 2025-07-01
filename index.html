@@ -113,7 +113,7 @@
     </style>
 </head>
 
-<body class="bg-gradient-to-b from-blue-100 to-blue-50 text-black min-h-screen flex flex-col m-0 p-0">
+<body class="bg-gradient-to-b from-blue-50 to-blue-100 text-gray-900 min-h-screen flex flex-col antialiased">
     
     <nav class="fixed top-0 left-0 w-full z-50 bg-gray-600 bg-opacity-60 text-white py-4 px-6 flex justify-between items-center">
         <div class="text-xl font-bold">
@@ -295,7 +295,7 @@
             
             <!-- Primeira linha de parceiros -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 w-full max-w-6xl mx-auto">
-                <a href="https://www.iesb.br/" class="flex justify-center items-center h-32 md:h-40 transition-transform hover:scale-105">
+                <a href="https://www.iesb.br/" class="flex justify-center items-center h-20 md:h-40 transition-transform hover:scale-105">
                     <img src="assets/instituicao/iesb.png" alt="IESB" class="w-auto h-full object-contain" />
                 </a>
                 <a href="https://www.udf.edu.br/" class="flex justify-center items-center h-32 md:h-40 transition-transform hover:scale-105">
@@ -308,13 +308,13 @@
             
             <!-- Segunda linha de parceiros -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 w-full max-w-6xl mx-auto mt-8 md:mt-12">
-                <a href="https://www.ifb.edu.br/" class="flex justify-center items-center h-28 md:h-32 transition-transform hover:scale-105">
+                <a href="https://www.ifb.edu.br/" class="flex justify-center items-center h-20 mb-8 md:h-32 transition-transform hover:scale-105">
                     <img src="assets/instituicao/IFB.png" alt="IFB" class="w-auto h-full object-contain" />
                 </a>
-                <a href="https://ucb.catolica.edu.br/" class="flex justify-center items-center h-24 md:h-28 transition-transform hover:scale-105">
+                <a href="https://ucb.catolica.edu.br/" class="flex justify-center items-center mb-8 h-20 md:h-28 transition-transform hover:scale-105">
                     <img src="assets/instituicao/ucb.png" alt="UCB" class="w-auto h-full object-contain" />
                 </a>
-                <a href="https://www.universidade.df.gov.br/" class="flex justify-center items-center h-28 md:h-32 transition-transform hover:scale-105">
+                <a href="https://www.universidade.df.gov.br/" class="flex justify-center items-center h-20 md:h-32 transition-transform hover:scale-105">
                     <img src="assets/instituicao/undf.png" alt="UNDF" class="w-auto h-full object-contain" />
                 </a>
             </div>
@@ -339,26 +339,26 @@
             
             <!-- Primeira linha de apoio -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 w-full max-w-6xl mx-auto">
-                <a href="https://secti.df.gov.br/" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                <a href="https://secti.df.gov.br/" class="flex justify-center items-center h-80 md:h-60 transition-transform hover:scale-105">
                     <img src="assets/apoio/secti.png" alt="SECTI" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="https://www.controllercontabil.com.br/" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                <a href="https://www.controllercontabil.com.br/" class="flex justify-center items-center h-60 md:h-60 transition-transform hover:scale-105">
                     <img src="assets/apoio/contabilidade.svg" alt="controllercontabil" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="https://www.instagram.com/rsturismoeventos/" class="flex mt-20 justify-center items-center h-20 md:h-32 transition-transform hover:scale-105">
+                <a href="https://www.instagram.com/rsturismoeventos/" class="flex mt-20 justify-center items-center h-24 md:h-32 transition-transform hover:scale-105">
                     <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" class="w-auto h-full object-contain"/>
                 </a>
             </div>
             
             <!-- Segunda linha de apoio -->
             <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 w-full max-w-6xl mx-auto mt-8 md:mt-12">
-                <a href="https://www.grupomulheresdobrasil.org.br/" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                <a href="https://www.grupomulheresdobrasil.org.br/" class="flex justify-center items-center h-40 mt-10 md:h-60 transition-transform hover:scale-105">
                     <img src="assets/apoio/mulheres.png" alt="Grupo Mulheres do Brasil Brasília" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="https://www.alura.com.br/artigos/alura-fiap-maior-ecossistema-educacao-tech-brasil" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                <a href="https://www.alura.com.br/artigos/alura-fiap-maior-ecossistema-educacao-tech-brasil" class="flex justify-center items-center h-24 md:h-60 transition-transform hover:scale-105">
                     <img src="assets/apoio/alura+fiap-cor-horiz.png" alt="Alura + FIAP" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="#" class="flex justify-center mt-20 items-center h-16 md:h-20 transition-transform hover:scale-105">
+                <a href="#" class="flex justify-center items-center h-20 md:h-20 md:mt-20 mt-10 hover:scale-105">
                     <img src="assets/apoio/galpao.png" alt="Galpão" class="w-auto h-full object-contain"/>
                 </a>
             </div>
@@ -485,69 +485,68 @@
           }
         }
     </script>
+
+<script>
+    // Função genérica para gerenciar submenus
+    function setupSubmenu(btnId, submenuId) {
+      const btn = document.getElementById(btnId);
+      const submenu = document.getElementById(submenuId);
+      let timeout;
     
-    <!-- Submenu do sobre -->
-    <script>
-        const menu = document.getElementById('menu-sobre');
-        const btn = document.getElementById('btn-sobre');
-        const submenu = document.getElementById('submenu-sobre');
-        let timeout;
+      if (!btn || !submenu) return;
     
-        function openMenu() {
+      const openMenu = () => {
         clearTimeout(timeout);
         submenu.classList.remove('hidden');
-        btn.querySelector('svg').classList.add('rotate-180');
-        }
+        const icon = btn.querySelector('svg');
+        if (icon) icon.classList.add('rotate-180');
+      };
     
-        function closeMenu() {
+      const closeMenu = () => {
         timeout = setTimeout(() => {
-            submenu.classList.add('hidden');
-            btn.querySelector('svg').classList.remove('rotate-180');
-        }, 300); // espera 300ms antes de fechar
-        }
+          submenu.classList.add('hidden');
+          const icon = btn.querySelector('svg');
+          if (icon) icon.classList.remove('rotate-180');
+        }, 300);
+      };
     
-        btn.addEventListener('mouseenter', openMenu);
-        btn.addEventListener('mouseleave', closeMenu);
-        submenu.addEventListener('mouseenter', openMenu);
-        submenu.addEventListener('mouseleave', closeMenu);
-    </script>
-
-    <!-- Submenu do comissao -->
-    <script>
-        const btncomissao = document.getElementById('btn-comissao');
-        const submenucomissao = document.getElementById('submenu-comissao');
-        let comissaotimeout;
-
-        function openMenu() {
-            clearTimeout(comissaotimeout);
-            submenucomissao.classList.remove('hidden');
-            btncomissao.querySelector('svg').classList.add('rotate-180');
+      // Eventos para desktop
+      btn.addEventListener('mouseenter', openMenu);
+      btn.addEventListener('mouseleave', closeMenu);
+      submenu.addEventListener('mouseenter', openMenu);
+      submenu.addEventListener('mouseleave', closeMenu);
+    
+      // Eventos para mobile (touch)
+      btn.addEventListener('click', (e) => {
+        if (window.innerWidth < 768) { // Verifica se é mobile
+          e.preventDefault();
+          const isHidden = submenu.classList.contains('hidden');
+          if (isHidden) {
+            openMenu();
+          } else {
+            closeMenu();
+          }
         }
-
-        function closeMenu() {
-            comissaotimeout = setTimeout(() => {
-            submenucomissao.classList.add('hidden');
-            btncomissao.querySelector('svg').classList.remove('rotate-180');
-            }, 300);
-        }
-
-        btncomissao.addEventListener('mouseenter', openMenu);
-        btncomissao.addEventListener('mouseleave', closeMenu);
-        submenucomissao.addEventListener('mouseenter', openMenu);
-        submenucomissao.addEventListener('mouseleave', closeMenu);
-    </script>
-
-    <!-- Menu resposivo -->
-    <script>
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navList = document.querySelector('nav ul');
-
+      });
+    }
+    
+    // Configura todos os submenus
+    document.addEventListener('DOMContentLoaded', () => {
+      // Configura cada submenu
+      setupSubmenu('btn-sobre', 'submenu-sobre');
+      setupSubmenu('btn-comissao', 'submenu-comissao');
+    
+      // Menu responsivo mobile
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navList = document.querySelector('nav ul');
+    
+      if (menuToggle && navList) {
         menuToggle.addEventListener('click', () => {
-            navList.classList.toggle('show');
+          navList.classList.toggle('show');
         });
-    </script>
-
-        
+      }
+    });
+    </script>        
       
 </body>
 
