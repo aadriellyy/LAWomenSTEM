@@ -275,99 +275,103 @@
     <br>
     <br>
 
-    <section id="instituicoes" class="px-4">
+    <section id="instituicoes" class="px-4 sm:px-6 lg:px-8 py-8 md:py-12">
         <!-- Instituição Proponente -->
-        <div class="flex flex-col items-center justify-center mt-8 md:mt-16">
-            <h2 class="text-2xl md:text-4xl font-bold text-[#673FBC] mb-5 text-center">
-                Instituição Proponente:
+        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-6 text-center">
+                Instituição Proponente
             </h2>
-            <a href="https://www.unb.br/" class="w-full flex justify-center">
-                <img src="assets/instituicao/unb.png" alt="Universidade de Brasília" class="h-11 md:h-16 mt-4 object-contain"/>
+            <a href="https://www.unb.br/" class="w-full max-w-xs md:max-w-sm lg:max-w-md transition-transform hover:scale-105">
+                <img src="assets/instituicao/unb.png" alt="Universidade de Brasília" 
+                     class="w-full h-auto max-h-16 md:max-h-32 object-contain"/>
             </a>
         </div> 
         
-        <div class="h-8 md:h-16"></div>
-        
         <!-- Instituições Parceiras -->
-        <div class="flex flex-col items-center justify-center mt-8 md:mt-12">
-            <h2 class="text-2xl md:text-4xl font-bold text-[#673FBC] text-center">
-                Instituições Parceiras:
+        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
+                Instituições Parceiras
             </h2>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-44 mt-4">
-                <a href="https://www.iesb.br/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/iesb.png" alt="IESB" class="h-24 md:h-32 object-contain" />
+            
+            <!-- Primeira linha de parceiros -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12 w-full max-w-6xl mx-auto">
+                <a href="https://www.iesb.br/" class="flex justify-center items-center h-32 md:h-40 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/iesb.png" alt="IESB" class="w-auto h-full object-contain" />
                 </a>
-                <a href="https://www.udf.edu.br/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/udf.png" alt="UDF" class="h-32 md:h-44 object-contain" />
+                <a href="https://www.udf.edu.br/" class="flex justify-center items-center h-32 md:h-40 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/udf.png" alt="UDF" class="w-auto h-full object-contain" />
                 </a>
-                <a href="https://www.uniceub.br/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/ceub.png" alt="CEUB" class="h-32 md:h-44 object-contain" />
+                <a href="https://www.uniceub.br/" class="flex justify-center items-center h-32 md:h-40 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/ceub.png" alt="CEUB" class="w-auto h-full object-contain" />
                 </a>
             </div>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-24 mt-8">
-                <a href="https://www.ifb.edu.br/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/IFB.png" alt="IFB" class="h-20 md:h-24 object-contain" />
+            
+            <!-- Segunda linha de parceiros -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 w-full max-w-6xl mx-auto mt-8 md:mt-12">
+                <a href="https://www.ifb.edu.br/" class="flex justify-center items-center h-28 md:h-32 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/IFB.png" alt="IFB" class="w-auto h-full object-contain" />
                 </a>
-                <a href="https://ucb.catolica.edu.br/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/ucb.png" alt="UCB" class="h-20 md:h-20 object-contain" />
+                <a href="https://ucb.catolica.edu.br/" class="flex justify-center items-center h-24 md:h-28 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/ucb.png" alt="UCB" class="w-auto h-full object-contain" />
                 </a>
-                <a href="https://www.universidade.df.gov.br/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/undf.png" alt="UNDF" class="h-20 md:h-24 object-contain" />
+                <a href="https://www.universidade.df.gov.br/" class="flex justify-center items-center h-28 md:h-32 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/undf.png" alt="UNDF" class="w-auto h-full object-contain" />
                 </a>
-           </div>
+            </div>
         </div>
         
-        <div class="h-8 md:h-16"></div>
-        
         <!-- Patrocinadores -->
-        <div class="flex flex-col items-center justify-center mt-8 md:mt-16">
-            <h2 class="text-2xl md:text-4xl font-bold text-[#673FBC] text-center">
-                Patrocinadores:
+        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
+                Patrocinadores
             </h2>
-            <a href="https://www.fap.df.gov.br/" class="w-full flex justify-center">
-                <img src="assets/instituicao/fapdf.png" alt="FAPDF" class="h-24 md:h-28 mt-6 object-contain"/>
+            <a href="https://www.fap.df.gov.br/" class="w-full max-w-xs md:max-w-md transition-transform hover:scale-105">
+                <img src="assets/instituicao/fapdf.png" alt="FAPDF" 
+                     class="w-full h-auto max-h-24 md:max-h-32 object-contain"/>
             </a>
         </div> 
     
         <!-- Apoio -->
-        <div class="flex flex-col items-center justify-center mt-8 md:mt-16">
-            <h2 class="text-2xl md:text-4xl font-bold text-[#673FBC] text-center">
-                Apoio:
+        <div class="flex flex-col items-center justify-center mb-12 md:mb-16">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
+                Apoio
             </h2>
-            <div class="flex flex-col md:flex-row justify-center items-center gap-8 md:gap-24 mt-4">
-                <a href="https://secti.df.gov.br/" class="w-full flex justify-center">
-                    <img src="assets/apoio/secti.png" alt="SECTI" class="max-w-xs h-auto object-contain"/>
+            
+            <!-- Primeira linha de apoio -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 w-full max-w-6xl mx-auto">
+                <a href="https://secti.df.gov.br/" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                    <img src="assets/apoio/secti.png" alt="SECTI" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="https://www.controllercontabil.com.br/" class="w-full flex justify-center">
-                    <img src="assets/apoio/contabilidade.svg" alt="controllercontabil" class="max-w-xs h-auto object-contain"/>
+                <a href="https://www.controllercontabil.com.br/" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                    <img src="assets/apoio/contabilidade.svg" alt="controllercontabil" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="https://www.instagram.com/rsturismoeventos/" class="w-full flex justify-center">
-                    <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" class="h-24 md:h-28 object-contain"/>
+                <a href="https://www.instagram.com/rsturismoeventos/" class="flex mt-20 justify-center items-center h-20 md:h-32 transition-transform hover:scale-105">
+                    <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" class="w-auto h-full object-contain"/>
                 </a>
-           </div>
-           <div class="flex justify-center items-center">
-                <a href="https://www.grupomulheresdobrasil.org.br/" class="w-full flex justify-center">
-                    <img src="assets/apoio/mulheres.png" alt="Grupo Mulheres do Brasil Brasília" class="max-w-xs h-auto object-contain"/>
+            </div>
+            
+            <!-- Segunda linha de apoio -->
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 md:gap-10 w-full max-w-6xl mx-auto mt-8 md:mt-12">
+                <a href="https://www.grupomulheresdobrasil.org.br/" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                    <img src="assets/apoio/mulheres.png" alt="Grupo Mulheres do Brasil Brasília" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="https://www.alura.com.br/artigos/alura-fiap-maior-ecossistema-educacao-tech-brasil" class="w-full flex justify-center">
-                    <img src="assets/apoio/alura+fiap-cor-horiz.png" alt="Alura + FIAP" class="max-w-xs h-auto object-contain"/>
+                <a href="https://www.alura.com.br/artigos/alura-fiap-maior-ecossistema-educacao-tech-brasil" class="flex justify-center items-center h-20 md:h-60 transition-transform hover:scale-105">
+                    <img src="assets/apoio/alura+fiap-cor-horiz.png" alt="Alura + FIAP" class="w-auto h-full object-contain"/>
                 </a>
-                <a href="#" class="w-full flex justify-center">
-                    <img src="assets/apoio/galpao.png" alt="Galpão" class="max-w-xs h-16 object-contain"/>
+                <a href="#" class="flex justify-center mt-20 items-center h-16 md:h-20 transition-transform hover:scale-105">
+                    <img src="assets/apoio/galpao.png" alt="Galpão" class="w-auto h-full object-contain"/>
                 </a>
-                
-           </div>
+            </div>
         </div> 
     
-        <div class="h-8 md:h-16"></div>
-        
         <!-- Agência de Turismo Oficial -->
-        <div class="flex flex-col items-center justify-center mt-8 md:mt-10">
-            <h2 class="text-2xl md:text-4xl font-bold text-[#673FBC] mb-5 text-center">
-                Agência de Turismo Oficial:
+        <div class="flex flex-col items-center justify-center">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-[#673FBC] mb-8 text-center">
+                Agência de Turismo Oficial
             </h2>
-            <a href="https://www.instagram.com/rsturismoeventos/" class="w-full flex justify-center">
-                <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" class="h-24 md:h-28 object-contain"/>
+            <a href="https://www.instagram.com/rsturismoeventos/" class="w-full max-w-xs md:max-w-sm transition-transform hover:scale-105">
+                <img src="assets/instituicao/rs.png" alt="Grupo RS Turismo" 
+                     class="w-full h-auto max-h-24 md:max-h-32 object-contain"/>
             </a>
         </div> 
     </section>
