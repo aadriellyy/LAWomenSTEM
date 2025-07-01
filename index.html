@@ -49,6 +49,39 @@
         nav ul li {
             width: 100%;
         }
+
+        /* Transições para submenus */
+        .rotate-180 {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+        }
+
+        /* Estilo do menu mobile */
+        nav ul.menu-list {
+        transition: all 0.3s ease;
+        max-height: 0;
+        overflow: hidden;
+        }
+
+        nav ul.menu-list.show {
+        max-height: 1000px; /* Ajuste conforme necessário */
+        }
+
+        /* Melhorias para submenus */
+        nav ul li {
+        position: relative;
+        }
+
+        nav ul ul {
+        min-width: 200px;
+        }
+
+        .submenu-sobre, .submenu-comissao {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 50;
+            }
     }
 
     @media (max-width: 768px) {
@@ -486,65 +519,70 @@
         }
     </script>
 
-<script>
-    // Função genérica para gerenciar submenus
-    function setupSubmenu(btnId, submenuId) {
-      const btn = document.getElementById(btnId);
-      const submenu = document.getElementById(submenuId);
-      let timeout;
-    
-      if (!btn || !submenu) return;
-    
-      const openMenu = () => {
-        clearTimeout(timeout);
-        submenu.classList.remove('hidden');
-        const icon = btn.querySelector('svg');
-        if (icon) icon.classList.add('rotate-180');
-      };
-    
-      const closeMenu = () => {
-        timeout = setTimeout(() => {
-          submenu.classList.add('hidden');
-          const icon = btn.querySelector('svg');
-          if (icon) icon.classList.remove('rotate-180');
-        }, 300);
-      };
-    
-      // Eventos para desktop
-      btn.addEventListener('mouseenter', openMenu);
-      btn.addEventListener('mouseleave', closeMenu);
-      submenu.addEventListener('mouseenter', openMenu);
-      submenu.addEventListener('mouseleave', closeMenu);
-    
-      // Eventos para mobile (touch)
-      btn.addEventListener('click', (e) => {
-        if (window.innerWidth < 768) { // Verifica se é mobile
-          e.preventDefault();
-          const isHidden = submenu.classList.contains('hidden');
-          if (isHidden) {
-            openMenu();
-          } else {
-            closeMenu();
-          }
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        // Função melhorada para submenus
+        const setupSubmenu = (btnId, submenuId) => {
+            const btn = document.getElementById(btnId);
+            const submenu = document.getElementById(submenuId);
+            
+            if (!btn || !submenu) return;
+
+            let timeout;
+            const icon = btn.querySelector('svg');
+
+            const toggleMenu = (open) => {
+            clearTimeout(timeout);
+            if (open) {
+                submenu.classList.remove('hidden');
+                if (icon) icon.classList.add('rotate-180');
+            } else {
+                submenu.classList.add('hidden');
+                if (icon) icon.classList.remove('rotate-180');
+            }
+            };
+
+            // Desktop (hover)
+            btn.addEventListener('mouseenter', () => toggleMenu(true));
+            submenu.addEventListener('mouseenter', () => toggleMenu(true));
+            
+            btn.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => toggleMenu(false), 300);
+            });
+            submenu.addEventListener('mouseleave', () => {
+            timeout = setTimeout(() => toggleMenu(false), 300);
+            });
+
+            // Mobile (click)
+            btn.addEventListener('click', (e) => {
+            if (window.innerWidth < 768) {
+                e.preventDefault();
+                const isOpen = !submenu.classList.contains('hidden');
+                toggleMenu(!isOpen);
+            }
+            });
+        };
+
+        // Inicializa submenus
+        setupSubmenu('btn-sobre', 'submenu-sobre');
+        setupSubmenu('btn-comissao', 'submenu-comissao');
+
+        // Menu mobile toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navList = document.querySelector('nav .menu-list');
+
+        if (menuToggle && navList) {
+            menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('show');
+            menuToggle.textContent = navList.classList.contains('show') ? '✕' : '☰';
+            });
         }
-      });
-    }
-    
-    // Configura todos os submenus
-    document.addEventListener('DOMContentLoaded', () => {
-      // Configura cada submenu
-      setupSubmenu('btn-sobre', 'submenu-sobre');
-      setupSubmenu('btn-comissao', 'submenu-comissao');
-    
-      // Menu responsivo mobile
-      const menuToggle = document.querySelector('.menu-toggle');
-      const navList = document.querySelector('nav ul');
-    
-      if (menuToggle && navList) {
-        menuToggle.addEventListener('click', () => {
-          navList.classList.toggle('show');
         });
-      }
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('nav') && window.innerWidth < 768) {
+            navList.classList.remove('show');
+            document.querySelector('.menu-toggle').textContent = '☰';
+        }
     });
     </script>        
       
