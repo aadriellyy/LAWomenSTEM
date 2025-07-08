@@ -185,8 +185,23 @@
             >
               Mentorias
             </button>
+            <button 
+            onclick="showTab('hackthon')" 
+            id="tab-hackthon" 
+            class="pb-2 px-2 sm:px-0 whitespace-nowrap text-[#000000] hover:text-[#673FBC] transition-colors"
+            >
+              Hackathon
+            </button>
+            <button 
+            onclick="showTab('empresas')" 
+            id="tab-empresas" 
+            class="pb-2 px-2 sm:px-0 whitespace-nowrap text-[#000000] hover:text-[#673FBC] transition-colors"
+            > 
+              Empresas
+            </button>
           </div>
-      
+
+<!-------- PALESTRANTE INTERNACIONAL --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
           <div id="tab-content-palestrantes" class="flex flex-col md:flex-row justify-between md:items-start w-full gap-8">       
             <div class="flex flex-col md:flex-row gap-10 items-start w-full">
               <div class="w-full md:w-1/2 flex flex-col space-y-10">
@@ -343,6 +358,7 @@
                 </div>
               </div>
                 
+    <!---------- PALESTRANTE NACIONAL --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
                 <div class="w-full md:w-1/2 flex flex-col space-y-10"> 
                   <h1 style="color: #673fbc;" class="text-2xl md:text-4xl font-bold leading-tight text-center">
                     Palestrantes Nacionais
@@ -351,9 +367,6 @@
                   <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                     <div class="flex flex-col items-center"> 
                       <img src="assets/palestrantes/regilenejpeg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                      <!-- <a href="https://www.utpl.edu.ec/">
-                        <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                      </a>  -->
                     </div> 
                     <div class="flex-1 text-center md:text-left">
                       <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Regilene Siqueira Rozal</h3>
@@ -369,9 +382,6 @@
                   <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                     <div class="flex flex-col items-center"> 
                       <img src="assets/palestrantes/tachira.jpeg" alt="Palestrante 7" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                      <!-- <a href="https://www.utpl.edu.ec/">
-                        <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                      </a>  -->
                     </div> 
                     <div class="flex-1 text-center md:text-left">
                       <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Thaciana Cerqueira</h3>
@@ -455,26 +465,20 @@
                       </p>
                     </div>
                   </div>
-
-
                 </div>
             </div> 
           </div>
 
-          <!-- MENTORIAS  -->
+<!--------- MENTORIAS  ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
           <div id="tab-content-mentoria" class="hidden w-full max-w-6xl mx-auto">        
             <div class="flex flex-col space-y-10">
                 <!-- Card 1 -->
                 <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                   <div class="flex flex-col items-center"> 
                     <img src="assets/palestrantes/mentoras/lorena.jpg" alt="Mentoria 1" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                    <!-- <a href="https://www.utpl.edu.ec/">
-                      <img src="assets/instituicao/utpl.png" alt="utpl" class="h-14 md:h-16 mt-4 object-contain" />
-                    </a>  -->
                   </div> 
                   <div class="flex-1 text-center md:text-left">
                     <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Lorena Borges</h3>
-                    <!-- <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2">Universidad Técnica Particular de Loja, Equador</h4> -->
                     <p class="text-sm md:text-base leading-relaxed text-justify">Possui mestrado em Segurança Cibernética e graduação em Engenharia de Redes de Comunicação pela Universidade de Brasília (UnB). Atua nas áreas de implantação, 
                       gerenciamento e segurança de redes de computadores há 18 anos. Atualmente é Analista de Infraestrutura de TI no Supremo Tribunal Federal - STF, professora substituta 
                       na UnB/CIC, além de docente na Faculdade IDP e Escola Superior de Redes - RNP/RJ.
@@ -487,13 +491,9 @@
                 <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                     <div class="flex flex-col items-center md:mt-auto"> 
                       <img src="assets/palestrantes/mentoras/raquel.jpg" alt="Mentoria 2" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                      <!-- <a href="https://www.ucr.ac.cr/">
-                        <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
-                      </a>  -->
                   </div>
                   <div class="flex-1 text-center md:text-left">
                     <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Raquel S B Fontes</h3>
-                    <!-- <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Costa Rica, Costa Rica </h4> -->
                     <p class="text-sm md:text-base leading-relaxed text-justify"> Funcionária na Diretoria de Tecnologia no Banco do Brasil. ​É formada pela FGV em Executive MBA em Big Data & ​Business Analytics. A partir de 2011, mergulhou no universo ​dos dados, 
                       atuando em projetar bancos de dados ​logicamente e fisicamente até explorar todas as faces do ​cubo. Com a evolução da maneira como lidamos com os ​dados e a alta volumetria com os 
                       quais sempre trabalhou, ​posicionou-se em analytics, extraindo insights para ​impulsionar decisões estratégicas. Também atua como ​educadora corporativa, compartilhando conhecimento 
@@ -506,7 +506,7 @@
           </div>
 
 
-          <!-- PROJETOS  -->
+<!--------- PROJETOS  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
           <div id="tab-content-projetos" class="hidden w-full max-w-6xl mx-auto">        
             <div class="flex flex-col space-y-10">
                 <!-- Card 1 -->
@@ -531,13 +531,9 @@
                 <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                     <div class="flex flex-col items-center md:mt-auto"> 
                       <img src="assets/projetos/MICE.png" alt="M2ICE" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                      <!-- <a href="https://www.ucr.ac.cr/">
-                        <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
-                      </a>  -->
                   </div>
                   <div class="flex-1 text-center md:text-left">
                     <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">M²ICE</h3>
-                    <!-- <h4 class="text-xl md:text-xl font-bold text-[#673FBC] mb-2"> Universidad de Costa Rica, Costa Rica </h4> -->
                     <p class="text-sm md:text-base leading-relaxed text-justify"> Meninas e Mulheres no Instituto de Ciências Exatas (IE): Ciência e 
                       Tecnologia em Prol da Redução das Desigualdades de Gênero no Distrito Federal e 
                       Entorno (M²ICE)
@@ -552,9 +548,6 @@
                 <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
                   <div class="flex flex-col items-center md:mt-auto"> 
                     <img src="assets/projetos/Logo Eureka Colorido.jpg" alt="Eureka" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
-                    <!-- <a href="https://www.ucr.ac.cr/">
-                      <img src="assets/instituicao/costa.jpeg" alt="Costa Rica" class="h-20 md:h-20 mt-4 object-contain" />
-                    </a>  -->
                 </div>
                 <div class="flex-1 text-center md:text-left">
                   <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Eureka</h3>
@@ -650,11 +643,10 @@
                   </div>
                 </div>
               
-              
               </div> 
           </div>
 
-          <!-- PROGRAMAÇÃO -->
+<!----------- PROGRAMAÇÃO ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
             <div id="tab-content-programacao" class="hidden w-full mt-8 px-2 sm:px-4">
               <p class="text-xl sm:text-2xl md:text-3xl text-center mb-6 font-semibold">Confira a programação completa do evento:</p>
             
@@ -799,9 +791,7 @@
                             <tr><td class="px-4 py-3 border">15h45 - 16h20</td><td class="px-4 py-3 border">Pitches - Hackathon</td>
                               <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>
                             <tr><td class="px-4 py-3 border">16h20 - 16h30</td><td class="px-4 py-3 border">Premiação Hackathon</td>
-                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>     
-                              <!-- <tr><td class="px-4 py-3 border">Fim do Dia</td><td class="px-4 py-3 border">Sorteio de Brindes</td>
-                                  <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>                          -->
+                              <td class="px-2 sm:px-4 py-2 border border-gray-400"></td>                             -->
                           </tbody>
                         </table>
                       </div>
@@ -893,6 +883,71 @@
                 </div>  
               </div>
             </div>
+
+<!---------- HACKTHON  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+          <div id="tab-content-hackthon" class="hidden w-full max-w-6xl mx-auto">        
+            <div class="flex flex-col space-y-10">
+                <!-- Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/hackthon/bruno.jpeg" alt="Bruno" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Bruno Goulart</h3>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">Mestre em Propriedade Intelectual e Transferência de Tecnologia para Inovação (UnB), atua como Coordenador de Prospecção e Parcerias no Parque Científico e Tecnológico da UnB, liderando iniciativas estratégicas para fomentar a inovação.
+                      Como Coordenador Nacional de Especialistas Visitantes no Ministério da Agricultura, impulsiona projetos de inovação agropecuária, conectando conhecimento técnico-científico às demandas do setor.
+                      Mentor e avaliador de projetos de inovação aberta, possui ampla experiência em ecossistemas de inovação, empreendedorismo e maturidade tecnológica, contribuindo para o desenvolvimento de soluções disruptivas e parcerias estratégicas. 
+                    </p>
+                  </div> 
+            </div>
+
+            <div class="flex flex-col space-y-10">
+                <!-- Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/hackthon/marileusa.jpeg" alt="Bruno" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Marileusa Chiarello</h3>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">Professora adjunta da UnB, coordena o Programa Start BSB de apoio a startups e integra o PROFNIT/UnB, com foco em inovação, empreendedorismo e propriedade intelectual. Doutora em Ciência dos Alimentos (INRA/Université de Nantes), 
+                      tem ampla experiência em CT&I, atuando na interface universidade-empresa, gestão de projetos e cooperação internacional.</p>
+                  </div> 
+            </div>
+
+          </div>
+
+ <!-------- Empresas -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+          <div id="tab-content-empresas" class="hidden w-full max-w-6xl mx-auto">        
+            <div class="flex flex-col space-y-10">
+                <!-- Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/hackthon/bruno.jpeg" alt="Bruno" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Bruno Goulart</h3>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">Mestre em Propriedade Intelectual e Transferência de Tecnologia para Inovação (UnB), atua como Coordenador de Prospecção e Parcerias no Parque Científico e Tecnológico da UnB, liderando iniciativas estratégicas para fomentar a inovação.
+                      Como Coordenador Nacional de Especialistas Visitantes no Ministério da Agricultura, impulsiona projetos de inovação agropecuária, conectando conhecimento técnico-científico às demandas do setor.
+                      Mentor e avaliador de projetos de inovação aberta, possui ampla experiência em ecossistemas de inovação, empreendedorismo e maturidade tecnológica, contribuindo para o desenvolvimento de soluções disruptivas e parcerias estratégicas. 
+                    </p>
+                  </div> 
+            </div>
+
+            <div class="flex flex-col space-y-10">
+                <!-- Card 1 -->
+                <div class="bg-gray-100 rounded-lg shadow-md p-4 md:p-6 flex flex-col md:flex-row items-center md:items-start gap-4 md:gap-6 max-w-6xl mx-auto">
+                  <div class="flex flex-col items-center"> 
+                    <img src="assets/hackthon/marileusa.jpeg" alt="Bruno" class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-full flex-shrink-0">
+                  </div> 
+                  <div class="flex-1 text-center md:text-left">
+                    <h3 class="text-xl md:text-2xl font-bold text-[#673FBC] mb-2">Marileusa Chiarello</h3>
+                    <p class="text-sm md:text-base leading-relaxed text-justify">Professora adjunta da UnB, coordena o Programa Start BSB de apoio a startups e integra o PROFNIT/UnB, com foco em inovação, empreendedorismo e propriedade intelectual. Doutora em Ciência dos Alimentos (INRA/Université de Nantes), 
+                      tem ampla experiência em CT&I, atuando na interface universidade-empresa, gestão de projetos e cooperação internacional.</p>
+                  </div> 
+            </div>
+
+          </div>
+<!--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->     
       </div>
     </section>
     
@@ -946,22 +1001,30 @@
         const programacaobtn = document.getElementById("tab-programacao");
         const mentbtn = document.getElementById("tab-mentorias");
         const projetosbtn = document.getElementById("tab-projetos");
+        const hackthonbtn = document.getElementById("tab-hackthon");
+        const empresasbtn = document.getElementById("tab-empresas");
       
         const palestranteContent = document.getElementById("tab-content-palestrantes");
         const programacaoContent = document.getElementById("tab-content-programacao");
         const mentContent = document.getElementById("tab-content-mentoria");
         const projetosContent = document.getElementById("tab-content-projetos");
+        const hackthonContent = document.getElementById("tab-content-hackthon");
+        const empresasContent = document.getElementById("tab-content-empresas");
       
         // Primeiro, resetar todos os estados
         palestranteBtn.classList.remove("border-b-4", "border-[#673FBC]");
         programacaobtn.classList.remove("border-b-4", "border-[#673FBC]");
         mentbtn.classList.remove("border-b-4", "border-[#673FBC]");
         projetosbtn.classList.remove("border-b-4", "border-[#673FBC]");
+        hackthonbtn.classList.remove("border-b-4", "border-[#673FBC]");
+        empresasbtn.classList.remove("border-b-4", "border-[#673FBC]");
         
         palestranteContent.classList.add("hidden");
         programacaoContent.classList.add("hidden");
         mentContent.classList.add("hidden");
         projetosContent.classList.add("hidden");
+        hackthonContent.classList.add("hidden");
+        empresasContent.classList.add("hidden");
       
         // Depois, ativar a tab selecionada (ou programacao como padrão)
         const selectedTab = tab || "programacao"; // Se tab for undefined, usa "programacao"
@@ -977,6 +1040,14 @@
         else if (selectedTab === "projetos") {
           projetosbtn.classList.add("border-b-4", "border-[#673FBC]");
           projetosContent.classList.remove("hidden");
+        }  
+        else if (selectedTab === "hackthon") {
+          hackthonbtn.classList.add("border-b-4", "border-[#673FBC]");
+          hackthonContent.classList.remove("hidden");
+        }  
+        else if (selectedTab === "empresas") {
+          empresasbtn.classList.add("border-b-4", "border-[#673FBC]");
+          empresasContent.classList.remove("hidden");
         } 
         else {
           // Padrão: programacao
