@@ -30,7 +30,7 @@ Você pode acessar o repositório completo no GitHub:
 🔗 [https://github.com/aadriellyy/LAWomenSTEM] (https://github.com/aadriellyy/LAWomenSTEM)
 
 Ou visualizar o site ao vivo em:
-🌐 Em breve..
+🌐 la-women-stem.vercel.app
 
 ## 🛠️ Abrir e rodar o projeto
 
