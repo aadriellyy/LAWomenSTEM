@@ -17,8 +17,6 @@ Site oficial do Fórum de Mulheres em STEM da América Latina, um evento que re�
 
 ## ✔️ Técnicas e tecnologias utilizadas
 
-**Faça uma lista de tecnologias e técnicas utilizadas (a justificativa e descrição são opcionais)**:
-
 - `HTML5`: estrutura semântica do site.
 - `TailwindCSS`: estilização moderna, responsiva e utilitária.
 - `JavaScript (vanilla)`: manipulação de abas e interação com elementos da página.
